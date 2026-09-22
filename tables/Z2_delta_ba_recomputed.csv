@@ -1,0 +1,3 @@
+learner,contrast,old_delta_ba_mean,old_delta_ba_ci_lo,old_delta_ba_ci_hi,new_delta_ba_mean,new_delta_ba_ci_lo,new_delta_ba_ci_hi,diff_delta_ba_pp
+RF,I28_G29 - I28,6.88,5.65,8.62,6.9,5.72,8.62,0.02
+SVC,I28_G29 - I28,7.3,5.84,9.45,7.33,5.94,9.46,0.03

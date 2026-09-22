@@ -1,0 +1,52 @@
+[
+  {
+    "class_id": 0,
+    "canonical_name": "Forest",
+    "evidence_source": "sar_v2/labels/T17_label_agreement.json (lines 53-83) + SAR physical backscatter signature (tables/Z1_class_physical_signature.csv)",
+    "med_g12_t15": 0.2601,
+    "med_vv_db_t15": -9.226,
+    "count_on_U2": 61325,
+    "count_on_C2": 55769,
+    "confidence": "CONFIRMED"
+  },
+  {
+    "class_id": 1,
+    "canonical_name": "Grassland",
+    "evidence_source": "sar_v2/labels/T17_label_agreement.json (lines 53-83) + SAR physical backscatter signature (tables/Z1_class_physical_signature.csv)",
+    "med_g12_t15": 0.3613,
+    "med_vv_db_t15": -11.9116,
+    "count_on_U2": 216544,
+    "count_on_C2": 145733,
+    "confidence": "CONFIRMED"
+  },
+  {
+    "class_id": 2,
+    "canonical_name": "Cropland",
+    "evidence_source": "sar_v2/labels/T17_label_agreement.json (lines 53-83) + SAR physical backscatter signature (tables/Z1_class_physical_signature.csv)",
+    "med_g12_t15": 0.3633,
+    "med_vv_db_t15": -11.288,
+    "count_on_U2": 282073,
+    "count_on_C2": 62903,
+    "confidence": "CONFIRMED"
+  },
+  {
+    "class_id": 3,
+    "canonical_name": "Urban",
+    "evidence_source": "sar_v2/labels/T17_label_agreement.json (lines 53-83) + SAR physical backscatter signature (tables/Z1_class_physical_signature.csv)",
+    "med_g12_t15": 0.7808,
+    "med_vv_db_t15": -8.3646,
+    "count_on_U2": 34951,
+    "count_on_C2": 19141,
+    "confidence": "CONFIRMED"
+  },
+  {
+    "class_id": 4,
+    "canonical_name": "Water",
+    "evidence_source": "sar_v2/labels/T17_label_agreement.json (lines 53-83) + SAR physical backscatter signature (tables/Z1_class_physical_signature.csv)",
+    "med_g12_t15": 0.2468,
+    "med_vv_db_t15": -18.2997,
+    "count_on_U2": 5424,
+    "count_on_C2": 3467,
+    "confidence": "CONFIRMED"
+  }
+]

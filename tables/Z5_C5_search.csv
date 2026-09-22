@@ -1,0 +1,19 @@
+type,learner,configuration,delta_ba_mean,ci_lo,ci_hi
+label_support,RF,C2_Consensus->C2_Consensus on C2,7.08,6.66,7.54
+label_support,RF,CLC->CLC on U2,6.27,5.81,6.71
+label_support,RF,CLC->WC on U2,4.31,4.03,4.59
+label_support,RF,WC->CLC on U2,5.37,4.95,5.78
+label_support,RF,WC->WC on C2,6.68,6.11,7.26
+label_support,RF,WC->WC on U2,3.68,3.29,4.04
+label_support,SVC,C2_Consensus->C2_Consensus on C2,8.01,7.3,8.75
+label_support,SVC,CLC->CLC on U2,7.88,7.54,8.24
+label_support,SVC,CLC->WC on U2,5.51,5.09,5.91
+label_support,SVC,WC->CLC on U2,8.79,8.19,9.37
+label_support,SVC,WC->WC on C2,10.96,10.17,11.71
+label_support,SVC,WC->WC on U2,6.26,5.79,6.73
+buffer_holdout,RF,east_holdout_5km_buffer,7.27,,
+buffer_holdout,RF,north_holdout_5km_buffer,5.83,,
+buffer_holdout,RF,south_holdout_5km_buffer,7.75,,
+buffer_holdout,SVC,east_holdout_5km_buffer,8.07,,
+buffer_holdout,SVC,north_holdout_5km_buffer,8.52,,
+buffer_holdout,SVC,south_holdout_5km_buffer,8.46,,

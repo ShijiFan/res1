@@ -1,0 +1,5 @@
+learner,metric,delta_gap_mean,ci_lo,ci_hi,excludes_zero
+RF,OA,0.39,0.17,0.6,True
+RF,BA,0.23,-0.52,1.14,False
+SVC,OA,0.24,-0.07,0.56,False
+SVC,BA,0.66,0.37,0.92,True

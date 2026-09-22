@@ -1,0 +1,6 @@
+class_id,class_name,zero_replicates,total_replicates,dropout_rate
+0,Forest,0,20000,0.0
+1,Grassland,0,20000,0.0
+2,Cropland,0,20000,0.0
+3,Urban,0,20000,0.0
+4,Water,694,20000,0.0347

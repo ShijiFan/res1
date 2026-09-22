@@ -1,0 +1,57 @@
+\documentclass[journal]{IEEEtran}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{array,booktabs,cite,graphicx,url,xcolor,microtype}
+\usepackage[scaled=0.88]{newtxtt}
+\graphicspath{{figures/}}
+\newcommand{\pp}{\,\mathrm{pp}}
+\newtheorem{definition}{Definition}
+
+\usepackage{xr-hyper}
+\externaldocument[supp-]{supplement}[supplement.pdf]
+\setcounter{dbltopnumber}{3}
+\renewcommand{\dbltopfraction}{0.90}
+\renewcommand{\textfraction}{0.08}
+\usepackage[colorlinks=true,citecolor=blue,linkcolor=blue,urlcolor=blue,breaklinks=true]{hyperref}
+\begin{document}
+
+\title{Cross-Track Sentinel-1 Land-Cover Classification with Two-Acquisition Interferometric Coherence}
+
+\author{Shiji~Fan,
+        Daniel~Albuquerque,~\IEEEmembership{Member,~IEEE},
+        Pedro~Pinho,~\IEEEmembership{Senior Member,~IEEE},
+        and~Ming~Shen,~\IEEEmembership{Senior Member,~IEEE}%
+\thanks{This work is funded by national funds through FCT--Funda\c{c}\~ao para a
+Ci\^encia e a Tecnologia, I.P., and, when eligible, co-funded by EU funds under
+project/support UID/50008/2025--Instituto de Telecomunica\c{c}\~oes, with DOI
+identifier \protect\url{https://doi.org/10.54499/UID/50008/2025}.}%
+\thanks{S. Fan, D. Albuquerque, and P. Pinho are with the University of Aveiro,
+Aveiro, Portugal, and Instituto de Telecomunica\c{c}\~oes, Portugal (e-mail:
+shiji.fan@ua.pt; dfa@ua.pt; ptpinho@ua.pt). M. Shen is with Aalborg University,
+Aalborg, Denmark (e-mail: mish@es.aau.dk). Corresponding author: Shiji Fan.}%
+}
+
+\markboth{Manuscript submitted to IEEE Transactions on Geoscience and Remote Sensing}%
+{Fan \MakeLowercase{\textit{et al.}}: Two-Acquisition Coherence for Cross-Track Classification}
+
+\maketitle
+
+\begin{abstract}
+Interferometric coherence records temporal scattering stability that complements SAR backscatter intensity. Its contribution to cross-track land-cover classification at a two-acquisition budget is the focus of this study. We evaluate four Sentinel-1 tracks over the eastern Netherlands, spanning ascending and descending passes and $12.2^\circ$ in incidence angle. A single 12-day coherence measurement augments a 28-dimensional intensity representation derived from the same image pair. Spatial model selection and evaluation use a 400\,m training exclusion, with three sampling seeds and twelve directed cross-track transfers. Coherence increases five-class balanced accuracy by $6.30\pp$ (95\% confidence interval: $5.25$--$8.19$) for random forest and $6.99\pp$ ($5.78$--$9.39$) for a support vector classifier. The corresponding overall-accuracy gains are $1.95\pp$ and $1.64\pp$. Class-level analysis locates the largest improvement in built-up land: its misclassification as forest falls from $17.5\%$ to $0.8\%$ for random forest. Spring-trained models retain balanced-accuracy gains of $5.03\pp$ and $5.23\pp$ on autumn acquisitions. Additional spatial and nonlinear coherence transformations provide no improvement over the raw scalar. These results identify repeat-pass coherence as a compact source of complementary class information for land-cover mapping across orbital tracks with limited acquisitions.
+\end{abstract}
+
+\begin{IEEEkeywords}
+Synthetic aperture radar (SAR), Sentinel-1, interferometric coherence, cross-track transfer, land-cover classification, observation budget, spatial cross-validation.
+\end{IEEEkeywords}
+
+\input{chapters/01_introduction}
+\input{chapters/02_data}
+\input{chapters/03_methodology}
+\input{chapters/04_results}
+\input{chapters/05_discussion_closing}
+\begingroup\raggedright
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+\endgroup
+
+\end{document}

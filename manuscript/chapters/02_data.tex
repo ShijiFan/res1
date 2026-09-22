@@ -1,0 +1,56 @@
+\section{Data and Acquisition Geometry}
+\subsection{Study Area and Orbital Tracks}
+The study covers a $43.08\times38.60$\,km region in the eastern Netherlands, bounded by $[6.00^\circ\mathrm{E},51.98^\circ\mathrm{N},6.54^\circ\mathrm{E},52.38^\circ\mathrm{N}]$. Its landscape includes grassland, cropland, forest, settlements, and inland water. All layers use UTM Zone 32N (EPSG:32632) on a $1077\times965$ grid with 40\,m spacing.
+
+Four Sentinel-1A IW tracks provide 12-day repeat-pass pairs from May 2024 (Table~\ref{tab:dataset}). T15 and T88 are ascending; T37 and T139 are descending. Mean incidence angles on the common support range from $32.798^\circ$ to $45.003^\circ$. The four tracks define twelve directed cross-track transfers and four in-track evaluations on the same geographic support.
+
+\subsection{SAR Processing}
+\label{sec:chain}
+Products were generated from Sentinel-1A IW SLC acquisitions through ASF HyP3~\cite{HyP3}, using GAMMA for interferometric processing and radiometric terrain correction. The four interferometric pairs share 10 range by 2 azimuth looks and a 40\,m UTM posting. Processing used Goldstein--Werner filtering with $\alpha=0.6$, minimum-cost-flow unwrapping, and the Copernicus GLO-30 DEM~\cite{CopernicusDEM}. The classification feature is the magnitude of normalized complex correlation, $g_{12}$, from the repeat-pass pair~\cite{Touzi1999}.
+
+Radiometric terrain correction produces terrain-flattened $\gamma^0$ backscatter~\cite{Small2011} at 10\,m. T15 and T37 products are delivered in dB; T88 and T139 products are converted from linear power to dB at native resolution. All four tracks then undergo bilinear interpolation to the 40\,m analysis grid. Supplementary Section S-IV records this processing convention.
+
+Spatial feature windows extend to $7\times7$ pixels for intensity and $3\times3$ pixels for coherence. The 400\,m exclusion used in model selection and evaluation exceeds the extent of overlapping feature windows. Within-class coherence autocorrelation decreases from $0.72$--$0.74$ at 40\,m to $0.11$--$0.15$ at 400\,m, and falls below $0.08$ at 5\,km.
+
+\subsection{Reference Labels and Common Support}
+\label{sec:ground_truth}
+ESA WorldCover 2021 v200~\cite{ESAWorldCover2021} and CORINE Land Cover 2018~\cite{CORINE2018} provide reference labels. Categorical labels are aligned by nearest-neighbor resampling and harmonized as forest, grassland, cropland, built-up, and water. The existing WorldCover preprocessing applies a one-column alignment correction before extraction on the analysis grid.
+
+The four-track sensor-valid mask $M_2$ contains 633,308 pixels, with finite intensity and valid coherence and incidence-angle values on every track. Intersecting $M_2$ with the minimum-mapping-unit mask gives $\Omega=608,825$ pixels. Of these, $U_2=600,317$ have valid labels in both reference products, and $C_2=287,013$ have matching labels. The primary models use $C_2$ for training and evaluation. Label-sensitivity experiments also use $U_2$ and individual reference products. The two-acquisition sensor mask matches the recorded four-baseline mask, $M_2=M_4$.
+
+\begin{figure*}[!t]
+\centering
+\includegraphics[width=0.92\textwidth]{fig2_study_area.pdf}
+\caption{Spatial partitions on the common four-track footprint. (A) The primary split uses 28 training blocks and 12 evaluation blocks. (B) Source-track model selection uses three spatial folds within the training blocks. A 400\,m exclusion separates training candidates from validation or evaluation pixels. (C) A directional holdout with a 5\,km excluded block row; directional results are reported in Section~\ref{sec:label_independence}.}
+\label{fig:study_area}
+\end{figure*}
+
+\begin{table*}[!t]
+\caption{Observation Geometry, Acquisition Parameters, and Pixel Support Summary for the Four-Track Sentinel-1 Dataset}
+\label{tab:dataset}
+\centering
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lccrrcccr}
+\toprule
+Track & Pass & IW & Abs.\ orbit & $\theta_{\text{AOI}}$ & $\theta_{\Omega}$ & Reference acq.\ ($t_1$) & Repeat acq.\ ($t_2$) & $B_\perp$ (m) \\
+\midrule
+T15  & Ascending  & IW1 & 53812 & $32.502^\circ$ & $\mathbf{32.798^\circ}$ & 2024-05-10 17:17:24 & 2024-05-22 17:17:23 & $+198.20$ \\
+T37  & Descending & IW2 & 53834 & $37.482^\circ$ & $\mathbf{37.125^\circ}$ & 2024-05-12 05:50:38 & 2024-05-24 05:50:38 & $+156.34$ \\
+T88  & Ascending  & IW2 & 53885 & $41.132^\circ$ & $\mathbf{41.387^\circ}$ & 2024-05-15 17:25:29 & 2024-05-27 17:25:29 & $-72.19$ \\
+T139 & Descending & IW3 & 53761 & $45.003^\circ$ & $\mathbf{45.003^\circ}$ & 2024-05-07 05:42:28 & 2024-05-19 05:42:28 & $-21.41$ \\
+\bottomrule
+\end{tabular}
+\\[3pt]
+\parbox{\textwidth}{\footnotesize Acquisition parameters are from the delivered HyP3 metadata. $\theta_{\rm AOI}$ and $\theta_\Omega$ denote mean ellipsoid incidence angles over the full grid and the common analysis support, respectively. The latter defines the $12.205^\circ$ angular span used throughout. Ascending and descending headings are $-15.6^\circ$ and $195.3^\circ$.}
+\end{table*}
+
+The four-track image subset in Fig.~\ref{fig:multitrack_sar_coherence} shows the same settlements and agricultural parcels under different viewing configurations. Backscatter brightness and texture vary across tracks, while built surfaces retain higher coherence than the surrounding vegetation.
+
+\begin{figure*}[!t]
+\centering
+\includegraphics[width=0.98\textwidth]{fig3_multitrack_sar_coherence.pdf}
+\caption{Sentinel-1 observations over a $4.4\times5.6$\,km subset around Goor and the Twentekanaal. Top row: dual-polarization backscatter composites for T15, T37, T88, and T139. Bottom row: the corresponding 12-day coherence fields. Built surfaces have high coherence against lower-coherence agricultural and forest cover.}
+\label{fig:multitrack_sar_coherence}
+\end{figure*}
+

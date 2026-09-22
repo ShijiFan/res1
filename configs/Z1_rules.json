@@ -1,0 +1,30 @@
+{
+  "rules": {
+    "Water": {
+      "metric": "med_vv_db",
+      "criterion": "minimum",
+      "rationale": "Specular reflection from water surface results in VV typically <= -17 dB, far lower than the other four classes; coherence is also low."
+    },
+    "Urban_Builtup": {
+      "metric": "med_g12",
+      "criterion": "maximum",
+      "secondary_check": "med_vv_db should be maximum or second maximum due to double bounce scattering",
+      "rationale": "Permanent scatterers provide the highest 12-day interferometric coherence; double bounce produces high backscatter."
+    },
+    "Forest": {
+      "candidates": "remaining_three_classes",
+      "metric": "med_rt_db",
+      "criterion": "maximum",
+      "secondary_check": "med_g12 should be relatively low due to volume decorrelation",
+      "rationale": "Volume scattering enhances cross-polarization (VH-VV least negative) while canopy movement causes volume/temporal decorrelation."
+    },
+    "Cropland_vs_Grassland": {
+      "candidates": "remaining_two_classes",
+      "metric": "med_abs_vvd_db",
+      "criterion": "higher_is_cropland",
+      "status": "TENTATIVE",
+      "rationale": "May agricultural phenological growth causes rapid 12-day intensity change, expected to be larger in Cropland than Grassland."
+    }
+  },
+  "consistency_requirement": "Urban (max g12) and Water (min vv) must be identical class_id across all four tracks (t15, t37, t88, t139); otherwise mark UNRESOLVED."
+}

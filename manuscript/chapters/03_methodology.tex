@@ -1,0 +1,37 @@
+\section{Methodology}
+\subsection{Feature Representations}
+\label{sec:ladder}
+Five representations share an eight-feature intensity base. Their paired contrasts measure the added value of intensity texture, raw coherence, and coherence transformations.
+\begin{enumerate}
+    \item \textbf{$I_8$ (8-D Base Intensity)}: Dual-date backscatter temporal means $\overline{VV} = (VV_1 + VV_2)/2$, $\overline{VH} = (VH_1 + VH_2)/2$, cross-ratio $\overline{RT} = \overline{VH} - \overline{VV}$, temporal differentials $\Delta VV = VV_2 - VV_1$, $\Delta VH = VH_2 - VH_1$, $\Delta RT$, and $3 \times 3$ local standard deviations $\sigma_{3\times 3}(\overline{VV})$, $\sigma_{3\times 3}(\overline{VH})$.
+    \item \textbf{$I_{28}$ (28-D Full Intensity Baseline)}: $I_8$ augmented with absolute temporal differences $|\Delta VV|, |\Delta VH|, |\Delta RT|$, temporal channel extrema ($\min, \max$), multi-scale spatial textures ($5 \times 5, 7 \times 7$ local standard deviations), and Sobel gradient magnitudes of $\overline{VV}$, $\overline{VH}$, and $\overline{RT}$, $3\times3$ standard deviations of $\Delta VV$ and $\overline{RT}$, and the four original date--polarization channels.
+    \item \textbf{$I_8+g_{12}$ (9-D Raw Coherence Augmentation)}: $I_8$ augmented with the single 12-day interferometric coherence scalar $g_{12} = \gamma_{12}$.
+    \item \textbf{$F_{12}$ (12-D Derived Coherence Representation)}: $I_8+g_{12}$ augmented with spatial coherence texture $\sigma_{3\times 3}(g_{12})$, coherence gradient magnitude $\|\nabla g_{12}\|$, and non-linear log-transform $\ln(1 - g_{12} + 10^{-4})$.
+    \item \textbf{$I_{28}+g_{12}$ (29-D Competitive Augmented Baseline)}: The full 28-D intensity baseline augmented with the identical raw coherence scalar $g_{12}$.
+\end{enumerate}
+Spatial filters use the four-track sensor-valid mask, independently of the reference labels. Standard deviations use normalized masked filters; gradients use sensor-valid neighborhoods. The feature set contains intensity and coherence magnitude.
+
+\subsection{Spatial Model Selection and Evaluation}
+\label{sec:partition}
+The scene is partitioned into 40 usable $5\times5$\,km blocks. The primary split assigns 28 blocks to training and twelve to evaluation (Fig.~\ref{fig:study_area}). Sampling 800 consensus pixels per evaluation block gives 9,600 test pixels per target track. Within the training blocks, three spatial folds cover the northern, central, and southern portions.
+
+For each fold, a $k$-d tree contains all validation candidates. Training candidates within 400\,m of any validation candidate are removed before sampling. The same exclusion is applied around the main evaluation pool. It removes $1.3$--$2.2\%$ of fold training candidates and 16,040 of 164,743 main training candidates. Minimum realized distances are 417.6, 400.0, and 400.0\,m for the folds, and 400.0\,m for the final training samples.
+
+Model selection maximizes mean three-fold balanced accuracy separately for each learner, representation, and source track. RF~\cite{Breiman2001} uses 300 trees, with $\mathrm{max\_features}\in\{\sqrt{D},0.5D,D\}$ and minimum leaf sizes in $\{1,5\}$. SVC~\cite{Cortes1995} uses an RBF kernel, $C\in\{0.1,1,10,100\}$, and $\gamma\in\{0.1,1,10\}\gamma_{\rm scale}$. Its robust scaler is fitted within the source training fold. Ties within $0.1\pp$ use the recorded simpler-parameter ordering. Model selection comprises 1,080 fold fits across 40 configurations.
+
+Selected parameters are frozen for final training on 20,000 pixels per source track and representation, sampled without replacement using seeds 17, 29, and 43. These configurations produce 120 fitted models. Each model predicts all four target tracks. Supplementary Section S-I lists the selected parameters.
+
+\subsection{Metrics and Paired Inference}
+For each seed, cross-track balanced accuracy averages class recall within each transfer and then averages the twelve directed transfers:
+\begin{equation}
+\mathrm{BA}_{\rm cross}=\frac{1}{12}\sum_{s\ne t}\frac{1}{5}\sum_{k=0}^{4}\frac{C_{s\to t}(k,k)}{\sum_{j=0}^{4}C_{s\to t}(k,j)}.
+\end{equation}
+Here $C_{s\to t}$ pools the evaluation blocks for a source--target pair. Reported performance is the mean across three sampling seeds, with seed standard deviations shown separately. Overall accuracy (OA) is the fraction of correctly classified evaluation pixels. The transfer gap is
+\begin{equation}
+G=\mathrm{Accuracy}_{\rm in}-\mathrm{Accuracy}_{\rm cross}.
+\end{equation}
+Coherence increments compare the augmented and intensity-only representations on identical observations. Gap reduction equals $\Delta_{\rm cross}-\Delta_{\rm in}$.
+
+The spring analysis draws twelve evaluation blocks with replacement in each of 20,000 bootstrap iterations. Compared representations, track pairs, and seeds share the same draw. Five-class BA intervals use the 19,306 draws containing every class; the other 694 omit water. The main point estimates use the full sample. Repeated predictions of a pixel remain grouped within its spatial block during resampling.
+
+Temporal evaluation applies the 48 frozen spring models for $I_{28}$ and $I_{28}+g_{12}$ to October 2024 observations of the same tracks. Autumn BA intervals use the bias-corrected and accelerated block bootstrap. All 20,000 draws are retained, with BA averaged over the classes present in both arms in the 633 draws with class dropout. Autumn OA uses percentile intervals. These conventions and the separate label-sensitivity protocol are documented in Supplementary Sections S-II and S-III.

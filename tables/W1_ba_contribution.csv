@@ -1,0 +1,11 @@
+learner,class_id,class_name,eval_pixels_per_cell,eval_share_pct,recall_I28,recall_I28_G29,delta_recall_pp,contribution_to_BA_pp,share_of_BA_gain_pct
+RF,0,Forest,1935,20.16,75.51,80.55,5.05,1.01,15.0
+RF,1,Grassland,5302,55.23,77.52,77.91,0.38,0.08,1.1
+RF,2,Cropland,2140,22.29,45.15,46.36,1.21,0.24,3.6
+RF,3,Urban,165,1.72,65.86,90.02,24.16,4.83,72.0
+RF,4,Water,58,0.6,65.28,68.06,2.78,0.56,8.3
+SVC,0,Forest,1935,20.16,78.2,82.35,4.15,0.83,11.7
+SVC,1,Grassland,5302,55.23,82.69,82.92,0.22,0.04,0.6
+SVC,2,Cropland,2140,22.29,37.46,38.41,0.94,0.19,2.6
+SVC,3,Urban,165,1.72,66.16,92.69,26.53,5.31,74.4
+SVC,4,Water,58,0.6,67.19,70.98,3.78,0.76,10.6

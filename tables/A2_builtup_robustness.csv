@@ -1,0 +1,11 @@
+learner,quantity,value,ci
+RF,"dBA, five-class (headline)",+6.303,"[+5.25, +8.19] block bootstrap"
+RF,"dBA, object-clustered bootstrap on the built-up term",+6.303,"[+5.56, +8.32]"
+RF,"dBA, leave-one-object-out range",+6.02 to +7.42,16 objects
+RF,"dBA, largest object (88 px) dropped",+7.421,-
+RF,"dBA, built-up class removed (four-class BA)",+2.007,-
+SVC,"dBA, five-class (headline)",+6.991,"[+5.78, +9.39] block bootstrap"
+SVC,"dBA, object-clustered bootstrap on the built-up term",+6.991,"[+6.01, +9.70]"
+SVC,"dBA, leave-one-object-out range",+6.61 to +8.46,16 objects
+SVC,"dBA, largest object (88 px) dropped",+8.461,-
+SVC,"dBA, built-up class removed (four-class BA)",+2.144,-

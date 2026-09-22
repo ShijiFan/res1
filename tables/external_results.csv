@@ -1,0 +1,5 @@
+region,window,status,tracks,rf_cross_ba_I28,rf_cross_ba_I28_G29,rf_gain_ba_pp,svc_cross_ba_I28,svc_cross_ba_I28_G29,svc_gain_ba_pp,evidence_level
+Site-1,Window-1 (Spring 2024),COMPLETED,"t15, t37, t88, t139",65.86,72.58,6.72,66.34,73.47,7.13,AUDITED_LOCAL_GROUND_TRUTH
+Site-1,Window-2 (Autumn 2024),PENDING_EXTERNAL_DATA,"t15, t37, t88, t139",,,,,,,PRE_REGISTERED_PENDING_EXTERNAL
+Site-2,Window-1 (Spring 2024),PENDING_EXTERNAL_DATA,"t15, t37, t88, t139",,,,,,,PRE_REGISTERED_PENDING_EXTERNAL
+Site-2,Window-2 (Autumn 2024),PENDING_EXTERNAL_DATA,"t15, t37, t88, t139",,,,,,,PRE_REGISTERED_PENDING_EXTERNAL

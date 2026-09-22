@@ -1,0 +1,261 @@
+{
+  "grid_specification": {
+    "block_size_pixels": [
+      125,
+      125
+    ],
+    "pixel_resolution_m": 40.0,
+    "block_extent_km": [
+      5.0,
+      5.0
+    ],
+    "crs": "EPSG:32632",
+    "aoi_bbox_wgs84": [
+      6.0,
+      51.98,
+      6.54,
+      52.38
+    ]
+  },
+  "historical_development_split": {
+    "description": "Historical 28-train / 12-eval block split used for development anchor baselines.",
+    "train_blocks": [
+      103,
+      203,
+      204,
+      207,
+      303,
+      304,
+      306,
+      403,
+      404,
+      405,
+      407,
+      502,
+      503,
+      504,
+      506,
+      507,
+      602,
+      604,
+      606,
+      607,
+      703,
+      704,
+      705,
+      706,
+      802,
+      804,
+      805,
+      807
+    ],
+    "eval_blocks": [
+      205,
+      206,
+      305,
+      307,
+      406,
+      505,
+      603,
+      605,
+      702,
+      707,
+      803,
+      806
+    ],
+    "train_block_count": 28,
+    "eval_block_count": 12
+  },
+  "source_spatial_cv_3fold": {
+    "description": "3-fold continuous spatial cross-validation within the source training region.",
+    "fold_1_blocks": [
+      103,
+      203,
+      204,
+      207,
+      303,
+      304,
+      306
+    ],
+    "fold_2_blocks": [
+      403,
+      404,
+      405,
+      407,
+      502,
+      503,
+      504,
+      506,
+      507
+    ],
+    "fold_3_blocks": [
+      602,
+      604,
+      606,
+      607,
+      703,
+      704,
+      705,
+      706,
+      802,
+      804,
+      805,
+      807
+    ],
+    "fold_counts": [
+      7,
+      9,
+      12
+    ],
+    "inter_fold_buffer_m": 400.0
+  },
+  "continuous_buffered_holdouts": {
+    "north_holdout_5km_buffer": {
+      "eval_blocks": [
+        103,
+        203,
+        204,
+        205,
+        206,
+        207
+      ],
+      "buffer_blocks_excluded": [
+        303,
+        304,
+        305,
+        306,
+        307
+      ],
+      "train_blocks": [
+        403,
+        404,
+        405,
+        406,
+        407,
+        502,
+        503,
+        504,
+        505,
+        506,
+        507,
+        602,
+        603,
+        604,
+        605,
+        606,
+        607,
+        702,
+        703,
+        704,
+        705,
+        706,
+        707,
+        802,
+        803,
+        804,
+        805,
+        806,
+        807
+      ],
+      "buffer_distance_km": 5.0
+    },
+    "south_holdout_5km_buffer": {
+      "eval_blocks": [
+        702,
+        703,
+        704,
+        705,
+        706,
+        707,
+        802,
+        803,
+        804,
+        805,
+        806,
+        807
+      ],
+      "buffer_blocks_excluded": [
+        602,
+        603,
+        604,
+        605,
+        606,
+        607
+      ],
+      "train_blocks": [
+        103,
+        203,
+        204,
+        205,
+        206,
+        207,
+        303,
+        304,
+        305,
+        306,
+        307,
+        403,
+        404,
+        405,
+        406,
+        407,
+        502,
+        503,
+        504,
+        505,
+        506,
+        507
+      ],
+      "buffer_distance_km": 5.0
+    },
+    "east_holdout_5km_buffer": {
+      "eval_blocks": [
+        206,
+        207,
+        306,
+        307,
+        406,
+        407,
+        506,
+        507,
+        606,
+        607,
+        706,
+        707,
+        806,
+        807
+      ],
+      "buffer_blocks_excluded": [
+        205,
+        305,
+        405,
+        505,
+        605,
+        705,
+        805
+      ],
+      "train_blocks": [
+        103,
+        203,
+        204,
+        303,
+        304,
+        403,
+        404,
+        502,
+        503,
+        504,
+        602,
+        603,
+        604,
+        702,
+        703,
+        704,
+        802,
+        803,
+        804
+      ],
+      "buffer_distance_km": 5.0
+    }
+  }
+}

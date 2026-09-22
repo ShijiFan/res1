@@ -1,0 +1,14 @@
+quantity,value
+built-up pixels in the evaluation sample,165
+share of evaluation pixels,"1.72% (165 of 9,600)"
+evaluation blocks containing built-up,8 of 12
+largest single-block share,38.8%
+distinct connected built-up objects hit,16
+share carried by the five largest objects,88.5%
+share carried by the largest object,53.3%
+median distance to a differently-labelled pixel,40 m (one pixel)
+pixels within 40 m of a class boundary,92 of 165 (55.8%)
+pixels within 80 m of a class boundary,130 of 165 (78.8%)
+pixels with a fully built-up 3x3 neighbourhood,21 of 165 (12.7%)
+pixels with a fully built-up 5x5 neighbourhood,5 of 165 (3.0%)
+"MMU filter removal rate, built-up",16.4% (vs 1.4% grassland)

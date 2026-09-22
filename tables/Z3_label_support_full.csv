@@ -1,0 +1,13 @@
+learner,train_label,test_label,eval_support,delta_ba_mean,ci_lo,ci_hi
+RF,C2_Consensus,C2_Consensus,C2,7.08,6.66,7.54
+RF,CLC,CLC,U2,6.27,5.81,6.71
+RF,CLC,WC,U2,4.31,4.03,4.59
+RF,WC,CLC,U2,5.37,4.95,5.78
+RF,WC,WC,C2,6.68,6.11,7.26
+RF,WC,WC,U2,3.68,3.29,4.04
+SVC,C2_Consensus,C2_Consensus,C2,8.01,7.3,8.75
+SVC,CLC,CLC,U2,7.88,7.54,8.24
+SVC,CLC,WC,U2,5.51,5.09,5.91
+SVC,WC,CLC,U2,8.79,8.19,9.37
+SVC,WC,WC,C2,10.96,10.17,11.71
+SVC,WC,WC,U2,6.26,5.79,6.73

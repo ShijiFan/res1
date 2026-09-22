@@ -1,0 +1,107 @@
+{
+  "site_1_eastern_netherlands": {
+    "bbox_wgs84": [
+      6.0,
+      51.98,
+      6.54,
+      52.38
+    ],
+    "crs": "EPSG:32632",
+    "grid_resolution_m": 40,
+    "grid_dimensions": [
+      1077,
+      965
+    ],
+    "window_1_primary": {
+      "year": 2024,
+      "season": "Spring (May-June)",
+      "interval_days": 12,
+      "status": "LOCAL_ARCHIVED_AND_VERIFIED",
+      "tracks": {
+        "t15": {
+          "track_number": 15,
+          "direction": "ASCENDING",
+          "swath": "IW1",
+          "inc_angle_deg": 32.5,
+          "date_1": "2024-05-10T17:17:24",
+          "date_2": "2024-05-22T17:17:23",
+          "baseline_m": -68.32,
+          "insar_dir": "S1AA_20240510T171724_20240522T171723_VVP012_INT40_G_ueF_717E"
+        },
+        "t37": {
+          "track_number": 37,
+          "direction": "DESCENDING",
+          "swath": "IW2",
+          "inc_angle_deg": 37.48,
+          "date_1": "2024-05-07T05:42:28",
+          "date_2": "2024-05-19T05:42:28",
+          "baseline_m": -21.41,
+          "insar_dir": "S1AA_20240507T054228_20240519T054228_VVP012_INT40_G_ueF_385D"
+        },
+        "t88": {
+          "track_number": 88,
+          "direction": "ASCENDING",
+          "swath": "IW2",
+          "inc_angle_deg": 41.13,
+          "date_1": "2024-05-15T17:25:29",
+          "date_2": "2024-05-27T17:25:29",
+          "baseline_m": 29.8,
+          "insar_dir": "S1AA_20240515T172529_20240527T172529_VVP012_INT40_G_ueF_EB10"
+        },
+        "t139": {
+          "track_number": 139,
+          "direction": "DESCENDING",
+          "swath": "IW3",
+          "inc_angle_deg": 45.0,
+          "date_1": "2024-05-12T05:50:38",
+          "date_2": "2024-05-24T05:50:38",
+          "baseline_m": 45.62,
+          "insar_dir": "S1AA_20240512T055038_20240524T055038_VVP012_INT40_G_ueF_F94D"
+        }
+      }
+    },
+    "window_2_independent_temporal": {
+      "year": 2024,
+      "season": "Late Summer (September)",
+      "interval_days": 12,
+      "status": "SPECIFIED_PENDING_EXTERNAL_PROCESSING",
+      "tracks": {
+        "t15": {
+          "track_number": 15,
+          "direction": "ASCENDING",
+          "date_1": "2024-09-07",
+          "date_2": "2024-09-19"
+        },
+        "t37": {
+          "track_number": 37,
+          "direction": "DESCENDING",
+          "date_1": "2024-09-04",
+          "date_2": "2024-09-16"
+        },
+        "t88": {
+          "track_number": 88,
+          "direction": "ASCENDING",
+          "date_1": "2024-09-12",
+          "date_2": "2024-09-24"
+        },
+        "t139": {
+          "track_number": 139,
+          "direction": "DESCENDING",
+          "date_1": "2024-09-09",
+          "date_2": "2024-09-21"
+        }
+      }
+    }
+  },
+  "site_2_friesland_coastal": {
+    "candidate_bbox_wgs84": [
+      5.3,
+      52.8,
+      5.85,
+      53.2
+    ],
+    "crs": "EPSG:32632",
+    "geographic_isolation_km": 85.0,
+    "status": "SPECIFIED_PENDING_EXTERNAL_PROCESSING"
+  }
+}

@@ -1,0 +1,7 @@
+stage,partition_type,candidates_before_buffer,candidates_after_buffer,rejected_count,rejection_percent,actual_min_distance_m,violations_below_400m
+cv_fold_1,spatial_cross_validation,112086,110588,1498,1.34,417.6,0
+cv_fold_2,spatial_cross_validation,108675,106242,2433,2.24,400.0,0
+cv_fold_3,spatial_cross_validation,108725,107356,1369,1.26,400.0,0
+main_training_seed_17,main_model_fit,164743,148703,16040,9.74,400.0,0
+main_training_seed_29,main_model_fit,164743,148703,16040,9.74,400.0,0
+main_training_seed_43,main_model_fit,164743,148703,16040,9.74,400.0,0

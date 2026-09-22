@@ -1,0 +1,96 @@
+[
+  {
+    "class_id": 0,
+    "canonical_name": "Forest",
+    "corine_source_codes": [
+      "311",
+      "312",
+      "313"
+    ],
+    "worldcover_source_codes": [
+      "10"
+    ],
+    "count_on_U2": 61325,
+    "source_file": "sar_v2/labels/T17_label_agreement.json",
+    "source_line": 98,
+    "med_g12_t15": 0.2601,
+    "med_vv_db_t15": -9.226,
+    "confidence": "CONFIRMED",
+    "physical_signature": "Volume scattering (high VH/VV ratio, low coherence g12 due to canopy motion)"
+  },
+  {
+    "class_id": 1,
+    "canonical_name": "Grassland",
+    "corine_source_codes": [
+      "231",
+      "321"
+    ],
+    "worldcover_source_codes": [
+      "30"
+    ],
+    "count_on_U2": 216544,
+    "source_file": "sar_v2/labels/T17_label_agreement.json",
+    "source_line": 103,
+    "med_g12_t15": 0.3613,
+    "med_vv_db_t15": -11.9116,
+    "confidence": "CONFIRMED",
+    "physical_signature": "Moderate backscatter and coherence, low polarization ratio"
+  },
+  {
+    "class_id": 2,
+    "canonical_name": "Cropland",
+    "corine_source_codes": [
+      "211",
+      "242",
+      "243"
+    ],
+    "worldcover_source_codes": [
+      "40"
+    ],
+    "count_on_U2": 282073,
+    "source_file": "sar_v2/labels/T17_label_agreement.json",
+    "source_line": 107,
+    "med_g12_t15": 0.3633,
+    "med_vv_db_t15": -11.288,
+    "confidence": "CONFIRMED",
+    "physical_signature": "Dynamic phenological decorrelation, moderate backscatter"
+  },
+  {
+    "class_id": 3,
+    "canonical_name": "Urban",
+    "corine_source_codes": [
+      "112",
+      "121",
+      "122",
+      "124"
+    ],
+    "worldcover_source_codes": [
+      "50"
+    ],
+    "count_on_U2": 34951,
+    "source_file": "sar_v2/labels/T17_label_agreement.json",
+    "source_line": 112,
+    "med_g12_t15": 0.7808,
+    "med_vv_db_t15": -8.3646,
+    "confidence": "CONFIRMED",
+    "physical_signature": "Permanent scatterer double-bounce (high coherence g12>0.78, high VV backscatter)"
+  },
+  {
+    "class_id": 4,
+    "canonical_name": "Water",
+    "corine_source_codes": [
+      "511",
+      "512"
+    ],
+    "worldcover_source_codes": [
+      "80"
+    ],
+    "count_on_U2": 5424,
+    "source_file": "sar_v2/labels/T17_label_agreement.json",
+    "source_line": 118,
+    "med_g12_t15": 0.2468,
+    "med_vv_db_t15": -18.2997,
+    "confidence": "CONFIRMED",
+    "physical_signature": "Specular reflection (very low VV backscatter <-17 dB, very low VH)"
+  }
+]

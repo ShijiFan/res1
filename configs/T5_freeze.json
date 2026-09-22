@@ -1,0 +1,49 @@
+{
+  "protocol_freeze_timestamp": "2026-09-16T14:17:30Z",
+  "governing_document": "E:\\research\\SAR\\tgrs_final_campaign_20260915\\NEXT_TASKS_T1_T6.md",
+  "evaluation_mode": "temporal_extrapolation_spatial_holdout",
+  "spatial_transferability_scope": "same_region_eastern_netherlands_autumn_2024",
+  "models_frozen": {
+    "source_directory": "runs_R1",
+    "learners": ["RF", "SVC"],
+    "representations": ["I28", "I28_G29"],
+    "source_tracks": ["t15", "t37", "t88", "t139"],
+    "seeds": [17, 29, 43],
+    "total_models": 24,
+    "retraining_permitted": false,
+    "hyperparameter_adaptation_permitted": false
+  },
+  "features_frozen": {
+    "I28": [
+      "vvm", "vhm", "rtm", "vvd", "vhd", "rtd", "lstd_vvm_3", "lstd_vhm_3",
+      "abs_vvd", "abs_vhd", "abs_rtd",
+      "min_vv", "max_vv", "min_vh", "max_vh",
+      "lstd_vvm_5", "lstd_vhm_5", "lstd_vvm_7", "lstd_vhm_7",
+      "gradm_vvm", "gradm_vhm", "gradm_rtm",
+      "lstd_vvd_3", "lstd_rtm_3",
+      "vv1", "vv2", "vh1", "vh2"
+    ],
+    "I28_G29": [
+      "vvm", "vhm", "rtm", "vvd", "vhd", "rtd", "lstd_vvm_3", "lstd_vhm_3",
+      "abs_vvd", "abs_vhd", "abs_rtd",
+      "min_vv", "max_vv", "min_vh", "max_vh",
+      "lstd_vvm_5", "lstd_vhm_5", "lstd_vvm_7", "lstd_vhm_7",
+      "gradm_vvm", "gradm_vhm", "gradm_rtm",
+      "lstd_vvd_3", "lstd_rtm_3",
+      "vv1", "vv2", "vh1", "vh2",
+      "g12_raw"
+    ]
+  },
+  "evaluation_support_set": {
+    "definition": "Autumn_Omega_4track_valid ∩ MMU_valid ∩ CLC_valid ∩ WorldCover_valid ∩ Agreement_mask",
+    "spatial_partition": "12_holdout_blocks_from_historical_development_split",
+    "aoi": [6.00, 51.98, 6.54, 52.38],
+    "crs": "EPSG:32632"
+  },
+  "decision_rules_prespecified": {
+    "rule_1_success": "If cross-track Delta BA (I28_G29 - I28) > 0 and 95% paired bootstrap CI strictly excludes zero, conclude: External Temporal Confirmation Confirmed.",
+    "rule_2_underpowered": "If cross-track Delta BA > 0 but 95% paired bootstrap CI includes zero, conclude: Directionally Consistent but Statistically Underpowered.",
+    "rule_3_refuted": "If cross-track Delta BA <= 0, conclude: External Temporal Confirmation Refuted."
+  },
+  "reporting_obligation": "Report the empirical result strictly as observed under the three rules without post-hoc rationalization."
+}

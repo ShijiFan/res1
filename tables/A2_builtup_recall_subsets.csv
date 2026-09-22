@@ -1,0 +1,7 @@
+learner,subset,rec_I28,rec_aug,d
+RF,all built-up pixels (165),67.22,90.71,23.48
+RF,>=80 m from a class boundary (50),80.33,95.67,15.33
+RF,fully built-up 3x3 (21),84.79,96.69,11.9
+SVC,all built-up pixels (165),66.63,93.01,26.38
+SVC,>=80 m from a class boundary (50),79.11,96.56,17.44
+SVC,fully built-up 3x3 (21),84.13,99.21,15.08

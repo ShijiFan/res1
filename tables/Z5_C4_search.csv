@@ -1,0 +1,11 @@
+learner,class_id,class_name,I28,I28_G29,delta_recall_pp
+RF,0,Forest,75.51,80.55,5.04
+RF,1,Grassland,77.52,77.91,0.39
+RF,2,Cropland,45.15,46.36,1.21
+RF,3,Urban,65.86,90.02,24.16
+RF,4,Water,65.28,68.06,2.78
+SVC,0,Forest,78.2,82.35,4.15
+SVC,1,Grassland,82.69,82.92,0.23
+SVC,2,Cropland,37.46,38.41,0.95
+SVC,3,Urban,66.16,92.69,26.53
+SVC,4,Water,67.19,70.98,3.79

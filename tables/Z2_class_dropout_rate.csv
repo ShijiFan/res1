@@ -1,0 +1,11 @@
+learner,representation,total_replicates,dropout_rate_Forest,dropout_rate_Grassland,dropout_rate_Cropland,dropout_rate_Urban,dropout_rate_Water
+RF,I8,20000,0.0,0.0,0.0,0.0,0.0347
+RF,I28,20000,0.0,0.0,0.0,0.0,0.0347
+RF,I8_G9,20000,0.0,0.0,0.0,0.0,0.0347
+RF,F12,20000,0.0,0.0,0.0,0.0,0.0347
+RF,I28_G29,20000,0.0,0.0,0.0,0.0,0.0347
+SVC,I8,20000,0.0,0.0,0.0,0.0,0.0347
+SVC,I28,20000,0.0,0.0,0.0,0.0,0.0347
+SVC,I8_G9,20000,0.0,0.0,0.0,0.0,0.0347
+SVC,F12,20000,0.0,0.0,0.0,0.0,0.0347
+SVC,I28_G29,20000,0.0,0.0,0.0,0.0,0.0347
