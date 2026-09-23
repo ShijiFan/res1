@@ -176,6 +176,15 @@ Generated vector PDFs will be stored in `manuscript/figures/`.
 
 ---
 
+## 🔎 A1 follow-up study resources
+
+For the planned Sentinel-1 crop-mapping observation-budget study, see the
+[verified paper, dataset and code map](docs/a1/REFERENCE_PACK_20260923.md) and
+[Gemini Antigravity reference handoff](docs/a1/GEMINI_REFERENCE_HANDOFF.md).
+These are planning materials; they do not report completed A1 experiments.
+
+---
+
 ## 📚 Citation
 
 If you find this research, code, or benchmark datasets helpful, please cite our paper:
