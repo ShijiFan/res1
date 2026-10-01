@@ -1,0 +1,3 @@
+learner,I28_cross_ba,I28_G29_cross_ba,delta_ba,bca_lo,bca_hi,delta_oa,oa_lo,oa_hi,eval_pixels_valid_in_autumn,eval_pixels_spring
+RF,61.54,66.36,4.82,3.79,6.19,-0.05,-1.42,1.47,9600,9600
+SVC,62.57,67.66,5.1,3.35,6.41,-0.08,-0.93,0.87,9600,9600

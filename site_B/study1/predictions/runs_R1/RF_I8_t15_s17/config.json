@@ -1,0 +1,43 @@
+{
+  "learner": "RF",
+  "representation": "I8",
+  "source_track": "t15",
+  "seed": 17,
+  "selected_params": {
+    "max_features": 1.0,
+    "min_samples_leaf": 1
+  },
+  "train_pixel_count": 20000,
+  "train_pixels_sha256": "6b1e25602c6db5f2e2408c14b717a1ce6ba8da08fd5ab5ec7d1d68366321e52b",
+  "eval_blocks": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    102,
+    105,
+    106,
+    200,
+    202,
+    204,
+    303,
+    304,
+    500,
+    601,
+    606,
+    701
+  ],
+  "eval_pixel_count": 13600,
+  "feature_dim": 8,
+  "feature_names": [
+    "vvm",
+    "vhm",
+    "rtm",
+    "vvd",
+    "vhd",
+    "rtd",
+    "lstd_vvm_3",
+    "lstd_vhm_3"
+  ]
+}

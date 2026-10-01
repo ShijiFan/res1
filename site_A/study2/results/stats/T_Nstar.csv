@@ -1,0 +1,5 @@
+year,track,Nstar_pairs,Nstar_scenes,first_M_below,rule
+2024,37,,,6,smallest M from which the upper 95% bound of dC stays < 1 pp for all larger M
+2024,88,,,6,smallest M from which the upper 95% bound of dC stays < 1 pp for all larger M
+2025,37,8.0,16.0,1,smallest M from which the upper 95% bound of dC stays < 1 pp for all larger M
+2025,88,8.0,16.0,8,smallest M from which the upper 95% bound of dC stays < 1 pp for all larger M

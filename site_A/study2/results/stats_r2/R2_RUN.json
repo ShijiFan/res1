@@ -1,0 +1,15 @@
+{
+  "utc": "2026-09-24T17:11:15+00:00",
+  "B": 2000,
+  "allow_missing": false,
+  "gates_passed": [
+    "G1",
+    "G2",
+    "G3",
+    "G4"
+  ],
+  "e5r_rows": 240,
+  "n_missing_files": 0,
+  "missing_examples": [],
+  "final": true
+}

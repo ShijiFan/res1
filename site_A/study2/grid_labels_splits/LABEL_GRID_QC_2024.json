@@ -1,0 +1,28 @@
+{
+  "source": "E:\\research\\SAR\\sar_v2\\labels\\nl_brp\\brp_parcels_2024_aoi.geojson",
+  "source_sha256": "2151dd5d3ef3cd03afe3e83078c01ddbc4ed4d3f638b036880c1c9147682b470",
+  "source_crs": "EPSG:4326",
+  "source_rows": 121723,
+  "invalid_geometry_repaired": 0,
+  "empty_geometry": 0,
+  "duplicate_normalized_geometry_rows": 0,
+  "buffer_nonempty_parcels": 32175,
+  "pure_pixels": 196763,
+  "conflicted_pixels_excluded": 2,
+  "eligible_parcels_ge2": 21461,
+  "eligible_by_class_ge2": {
+    "Maize": 4189,
+    "PermGrass": 11881,
+    "TempGrass": 3267,
+    "Potato": 494,
+    "Other": 825,
+    "Beet": 248,
+    "SpringCereal": 262,
+    "WinterCereal": 295
+  },
+  "ambiguous_season_code_parcels": 462,
+  "raster": "E:\\research\\SAR\\A1_observation_budget_20260923\\runs\\20260923_G0L_COMMON_GRID\\parcel_raster_2024.tif",
+  "raster_sha256": "7300ca7d0b2323228f0f2545bcc26e851d8b1303a7bcfd927414d62e1626ec4a",
+  "table": "E:\\research\\SAR\\A1_observation_budget_20260923\\runs\\20260923_G0L_COMMON_GRID\\parcel_table_2024.csv",
+  "table_sha256": "6ac07b1ce50285f2698e14a8a1dbd46558514020211f9821edf89d3804ebe24b"
+}

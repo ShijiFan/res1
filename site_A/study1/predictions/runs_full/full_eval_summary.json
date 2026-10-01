@@ -1,0 +1,11 @@
+{
+  "n_eval_pixels": 79436,
+  "per_class": [
+    14919,
+    48213,
+    14460,
+    1358,
+    486
+  ],
+  "min_dist_to_any_train_candidate_m": 40.0
+}

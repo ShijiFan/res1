@@ -1,0 +1,42 @@
+{
+  "learner": "SVC",
+  "representation": "F12",
+  "source_track": "t88",
+  "seed": 29,
+  "selected_params": {
+    "C": 10.0,
+    "gamma_mult": 0.1
+  },
+  "train_pixel_count": 20000,
+  "train_pixels_sha256": "927001d41ddbc3be8bf32c90d0635782ac86397fd4d36a2b30043c9185b9129c",
+  "eval_blocks": [
+    205,
+    206,
+    305,
+    307,
+    406,
+    505,
+    603,
+    605,
+    702,
+    707,
+    803,
+    806
+  ],
+  "eval_pixel_count": 9600,
+  "feature_dim": 12,
+  "feature_names": [
+    "vvm",
+    "vhm",
+    "rtm",
+    "vvd",
+    "vhd",
+    "rtd",
+    "lstd_vvm_3",
+    "lstd_vhm_3",
+    "g12",
+    "lstd_g12_3",
+    "gradm_g12",
+    "log_neg_g12"
+  ]
+}

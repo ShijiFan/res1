@@ -1,0 +1,10 @@
+{
+  "n_eval_omega": 160618,
+  "n_bag_built": 2293,
+  "n_far": 86293,
+  "c2_urban": 1358,
+  "c2_urban_with_bag_built": 525,
+  "c2_urban_with_any_building": 1215,
+  "bag_built_labelled_urban_in_c2": 525,
+  "bag_built_in_c2": 1005
+}

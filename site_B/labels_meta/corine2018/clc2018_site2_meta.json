@@ -1,0 +1,35 @@
+{
+  "dataset": "CORINE Land Cover 2018",
+  "source": "https://image.discomap.eea.europa.eu/arcgis/rest/services/Corine/CLC2018_WM/MapServer/0/query?",
+  "aoi_bbox_WSEN": [
+    6.55,
+    52.75,
+    7.05,
+    53.1
+  ],
+  "download_utc": "2026-09-30T23:08:29+00:00",
+  "server_reported_count": 352,
+  "features_retrieved": 352,
+  "codes": [
+    "112",
+    "121",
+    "122",
+    "131",
+    "133",
+    "141",
+    "142",
+    "211",
+    "231",
+    "242",
+    "243",
+    "311",
+    "312",
+    "313",
+    "321",
+    "322",
+    "324",
+    "411",
+    "412",
+    "512"
+  ]
+}

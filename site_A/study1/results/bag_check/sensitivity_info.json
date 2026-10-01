@@ -1,0 +1,13 @@
+{
+  "n_pixels": 160618,
+  "n_clusters": 11427,
+  "set_sizes": {
+    "thr25": 2293,
+    "thr50": 459,
+    "thr75": 144,
+    "iso": 153,
+    "small": 1170,
+    "settle": 970,
+    "far": 86293
+  }
+}

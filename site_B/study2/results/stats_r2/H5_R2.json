@@ -1,0 +1,17 @@
+{
+  "utc": "2026-10-01T14:46:18+00:00",
+  "per_track": {
+    "T37": {
+      "Nstar_2025": 9.0,
+      "Nstar_2024": 8.0,
+      "status": "CONFIRMED"
+    },
+    "T88": {
+      "Nstar_2025": 6.0,
+      "Nstar_2024": 8.0,
+      "status": "CONFIRMED"
+    }
+  },
+  "overall": "CONFIRMED",
+  "note": "Preregistered H5 is |N*(2025) - N*(2024)| <= 2. The preregistration contains no rule for an undefined N*. a1_s7_stats.py coded undefined as 10 (fillna(10)); that coding is not preregistered and is NOT used here. If N* is undefined in either year the hypothesis cannot be evaluated."
+}

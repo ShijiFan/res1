@@ -1,0 +1,80 @@
+{
+  "grid": {
+    "crs": "EPSG:32632",
+    "pixel_m": 40,
+    "width": 966,
+    "height": 1148,
+    "affine_gdal": [
+      293960.0,
+      40.0,
+      0.0,
+      5807560.0,
+      0.0,
+      -40.0
+    ],
+    "origin_rule": "project AOI EPSG:4326 -> EPSG:32632; left=floor(minx/40)*40; top=ceil(maxy/40)*40",
+    "pixel_purity_rule": "rasterize negative sqrt(2)*20 m polygon buffer at pixel centers; remove multi-parcel conflicts",
+    "aoi_pixel_rule": "same negative buffer for AOI boundary",
+    "grid_status": "PREDECLARED_COMMON_GRID; SAR product alignment pending",
+    "created_utc": "2026-09-23T01:25:40+00:00"
+  },
+  "years": {
+    "2024": {
+      "source": "E:\\research\\SAR\\sar_v2\\labels\\nl_brp\\brp_parcels_2024_aoi.geojson",
+      "source_sha256": "2151dd5d3ef3cd03afe3e83078c01ddbc4ed4d3f638b036880c1c9147682b470",
+      "source_crs": "EPSG:4326",
+      "source_rows": 121723,
+      "invalid_geometry_repaired": 0,
+      "empty_geometry": 0,
+      "duplicate_normalized_geometry_rows": 0,
+      "buffer_nonempty_parcels": 32175,
+      "pure_pixels": 196763,
+      "conflicted_pixels_excluded": 2,
+      "eligible_parcels_ge2": 21461,
+      "eligible_by_class_ge2": {
+        "Maize": 4189,
+        "PermGrass": 11881,
+        "TempGrass": 3267,
+        "Potato": 494,
+        "Other": 825,
+        "Beet": 248,
+        "SpringCereal": 262,
+        "WinterCereal": 295
+      },
+      "ambiguous_season_code_parcels": 462,
+      "raster": "E:\\research\\SAR\\A1_observation_budget_20260923\\runs\\20260923_G0L_COMMON_GRID\\parcel_raster_2024.tif",
+      "raster_sha256": "7300ca7d0b2323228f0f2545bcc26e851d8b1303a7bcfd927414d62e1626ec4a",
+      "table": "E:\\research\\SAR\\A1_observation_budget_20260923\\runs\\20260923_G0L_COMMON_GRID\\parcel_table_2024.csv",
+      "table_sha256": "6ac07b1ce50285f2698e14a8a1dbd46558514020211f9821edf89d3804ebe24b"
+    },
+    "2025": {
+      "source": "E:\\research\\SAR\\sar_v2\\labels\\nl_brp\\brp_parcels_aoi.geojson",
+      "source_sha256": "8e464701b0a818f1730dcac1d8e09b4f77d9f91f7b0716f59bc218e15f843129",
+      "source_crs": "EPSG:28992",
+      "source_rows": 115431,
+      "invalid_geometry_repaired": 0,
+      "empty_geometry": 0,
+      "duplicate_normalized_geometry_rows": 20,
+      "buffer_nonempty_parcels": 32778,
+      "pure_pixels": 197294,
+      "conflicted_pixels_excluded": 81,
+      "eligible_parcels_ge2": 21725,
+      "eligible_by_class_ge2": {
+        "Maize": 4272,
+        "Other": 758,
+        "PermGrass": 11868,
+        "TempGrass": 3227,
+        "Potato": 599,
+        "WinterCereal": 417,
+        "Beet": 263,
+        "SpringCereal": 321
+      },
+      "ambiguous_season_code_parcels": 475,
+      "raster": "E:\\research\\SAR\\A1_observation_budget_20260923\\runs\\20260923_G0L_COMMON_GRID\\parcel_raster_2025.tif",
+      "raster_sha256": "2b3ebc84d3f4db482bceba6b851c3ba126ddd7f06a7fe306fe5b97ec19dbf9ef",
+      "table": "E:\\research\\SAR\\A1_observation_budget_20260923\\runs\\20260923_G0L_COMMON_GRID\\parcel_table_2025.csv",
+      "table_sha256": "18a10448813e5109c21cb9081be494f01a02a0e952bead562cbb23c9c5f3cb69"
+    }
+  },
+  "status": "LABEL_GRID_PREFLIGHT_COMPLETE; RTC alignment and semantic crop-code review pending"
+}

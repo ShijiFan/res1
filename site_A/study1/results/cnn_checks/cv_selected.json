@@ -1,0 +1,50 @@
+{
+  "CNN_I_t15": {
+    "lr": 0.0003,
+    "epochs": 30,
+    "wd": 0.0001,
+    "cv_mean_ba": 81.519
+  },
+  "CNN_I_t37": {
+    "lr": 0.0003,
+    "epochs": 15,
+    "wd": 0.0001,
+    "cv_mean_ba": 79.084
+  },
+  "CNN_I_t88": {
+    "lr": 0.001,
+    "epochs": 30,
+    "wd": 0.001,
+    "cv_mean_ba": 72.635
+  },
+  "CNN_I_t139": {
+    "lr": 0.001,
+    "epochs": 30,
+    "wd": 0.0001,
+    "cv_mean_ba": 78.461
+  },
+  "CNN_IG_t15": {
+    "lr": 0.0003,
+    "epochs": 30,
+    "wd": 0.0001,
+    "cv_mean_ba": 82.2
+  },
+  "CNN_IG_t37": {
+    "lr": 0.001,
+    "epochs": 15,
+    "wd": 0.0001,
+    "cv_mean_ba": 80.004
+  },
+  "CNN_IG_t88": {
+    "lr": 0.001,
+    "epochs": 30,
+    "wd": 0.0001,
+    "cv_mean_ba": 78.129
+  },
+  "CNN_IG_t139": {
+    "lr": 0.001,
+    "epochs": 30,
+    "wd": 0.0001,
+    "cv_mean_ba": 80.827
+  }
+}

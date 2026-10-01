@@ -1,0 +1,21 @@
+{
+  "arm": "CNN_I",
+  "layers": [
+    "d1_vv",
+    "d1_vh",
+    "d2_vv",
+    "d2_vh"
+  ],
+  "source_track": "t88",
+  "seed": 43,
+  "patch": 9,
+  "epochs": 30,
+  "lr": 0.001,
+  "weight_decay": 0.0001,
+  "batch": 256,
+  "n_params": 57253,
+  "train_pixels": 20000,
+  "eval_pixels": 9600,
+  "eval_pixels_full": 79436,
+  "seconds": 25.4
+}

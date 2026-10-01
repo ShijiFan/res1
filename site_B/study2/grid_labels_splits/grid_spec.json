@@ -1,0 +1,19 @@
+{
+  "crs": "EPSG:32632",
+  "pixel_m": 40,
+  "width": 871,
+  "height": 999,
+  "affine_gdal": [
+    334640.0,
+    40.0,
+    0.0,
+    5886200.0,
+    0.0,
+    -40.0
+  ],
+  "origin_rule": "project AOI EPSG:4326 -> EPSG:32632; left=floor(minx/40)*40; top=ceil(maxy/40)*40",
+  "pixel_purity_rule": "rasterize negative sqrt(2)*20 m polygon buffer at pixel centers; remove multi-parcel conflicts",
+  "aoi_pixel_rule": "same negative buffer for AOI boundary",
+  "grid_status": "PREDECLARED_COMMON_GRID; SAR product alignment pending",
+  "created_utc": "2026-09-30T16:33:21+00:00"
+}

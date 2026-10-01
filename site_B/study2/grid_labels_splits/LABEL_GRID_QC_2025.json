@@ -1,0 +1,28 @@
+{
+  "source": "E:\\research\\SAR\\sar_v2\\labels\\nl_brp\\brpgewaspercelen_definitief_2025.gpkg",
+  "source_sha256": "b1880ecd38c6f9fc2860ca2e008d287e84e98714f05cb52b68db88075f3ae901",
+  "source_crs": "EPSG:28992",
+  "source_rows": 73149,
+  "invalid_geometry_repaired": 0,
+  "empty_geometry": 0,
+  "duplicate_normalized_geometry_rows": 0,
+  "buffer_nonempty_parcels": 16313,
+  "pure_pixels": 210831,
+  "conflicted_pixels_excluded": 0,
+  "eligible_parcels_ge2": 12746,
+  "eligible_by_class_ge2": {
+    "Potato": 2872,
+    "WinterCereal": 448,
+    "Other": 1703,
+    "Beet": 1381,
+    "Maize": 1173,
+    "PermGrass": 2502,
+    "TempGrass": 1548,
+    "SpringCereal": 1119
+  },
+  "ambiguous_season_code_parcels": 92,
+  "raster": "E:\\research\\SAR\\site2_20260930\\runs\\G0L_COMMON_GRID\\parcel_raster_2025.tif",
+  "raster_sha256": "ed216c819453d4efb1c8c80c0ec4190f465bbda1d89917af609d413746b8736b",
+  "table": "E:\\research\\SAR\\site2_20260930\\runs\\G0L_COMMON_GRID\\parcel_table_2025.csv",
+  "table_sha256": "0a637c7256208965163a7707ab7b19649eec7a0cc967a7210933157efd689805"
+}

@@ -1,0 +1,60 @@
+{
+  "reason": "The BRP names for these codes do not explicitly identify winter or spring sowing. The strict alternative sends them to Other until an official code-level season source is verified.",
+  "ambiguous_codes": [
+    238,
+    314,
+    382,
+    670,
+    2652,
+    6636,
+    7130
+  ],
+  "sensitivity": {
+    "2024": {
+      "current_mapping_eligible": {
+        "Maize": 4189,
+        "PermGrass": 11881,
+        "TempGrass": 3267,
+        "Potato": 494,
+        "Other": 825,
+        "Beet": 248,
+        "SpringCereal": 262,
+        "WinterCereal": 295
+      },
+      "strict_season_mapping_eligible": {
+        "Maize": 4189,
+        "PermGrass": 11881,
+        "TempGrass": 3267,
+        "Potato": 494,
+        "Other": 934,
+        "Beet": 248,
+        "SpringCereal": 235,
+        "WinterCereal": 213
+      }
+    },
+    "2025": {
+      "current_mapping_eligible": {
+        "Maize": 4272,
+        "Other": 758,
+        "PermGrass": 11868,
+        "TempGrass": 3227,
+        "Potato": 599,
+        "WinterCereal": 417,
+        "Beet": 263,
+        "SpringCereal": 321
+      },
+      "strict_season_mapping_eligible": {
+        "Maize": 4272,
+        "Other": 880,
+        "PermGrass": 11868,
+        "TempGrass": 3227,
+        "Potato": 599,
+        "WinterCereal": 324,
+        "Beet": 263,
+        "SpringCereal": 292
+      }
+    }
+  },
+  "current_mapping_modified": false,
+  "status": "SEMANTIC_DECISION_PENDING"
+}

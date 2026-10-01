@@ -1,0 +1,11 @@
+{
+  "contrast": "CNN_IG - CNN_I",
+  "metric": "cross_ba",
+  "A": 77.54,
+  "B": 75.488,
+  "delta": 2.052,
+  "ci_lo": 1.513,
+  "ci_hi": 4.263,
+  "n_valid_boot": 19290,
+  "source": "site2_20260930/runs/STUDY1/ws/runs_cnn2/tuned_p9 via scripts/s2_15_bootstrap.contrast (20,000 block draws, RandomState(42))"
+}

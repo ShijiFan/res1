@@ -1,0 +1,10 @@
+{
+  "cube": "E:\\research\\SAR\\A0_gamma0_rerun_20260929\\data\\cube_4track_v7.npz",
+  "cube_sha256": "06d26adeb00471e6031aee4648b73af97913dd8aa38c4cec415b3869e2525af9",
+  "omega": "E:\\research\\SAR\\revision_experiments_20260914\\omega_v6_rebuilt.npy",
+  "omega_sha256": "37606a3a1becfda4508fa68abbd5b5b6bf7ee0274f6f51f29435b9c748917fc8",
+  "omega_pixels_without_v7_intensity": 12,
+  "c2_pixels": 287013,
+  "r1_source": "E:\\research\\SAR\\res1_clean\\src\\run_R1_buffered_cv_retrain.py",
+  "r1_source_sha256": "b423a3eca910d86ddc7e69f4a3bf5a40a76aa6a92f5d248b3f095fd308ac4d5e"
+}

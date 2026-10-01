@@ -1,0 +1,15 @@
+{
+  "downloaded_utc": "2026-09-30T23:32:40+00:00",
+  "source": "https://api.pdok.nl/kadaster/bag/ogc/v2/collections/pand/items",
+  "license": "Public Domain Mark 1.0",
+  "aoi": [
+    6.55,
+    52.75,
+    7.05,
+    53.1
+  ],
+  "tile_deg": 0.02,
+  "n_tiles": 450,
+  "features_raw": 244027,
+  "features_unique": 241130
+}

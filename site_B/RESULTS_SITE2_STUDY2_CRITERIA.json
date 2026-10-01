@@ -1,0 +1,53 @@
+{
+  "R2-1": {
+    "cells": 8,
+    "lower_bound_gt0": 8,
+    "replicated": true,
+    "values_pp": [
+      2.33,
+      1.98,
+      1.93,
+      1.39,
+      1.39,
+      1.75,
+      1.56,
+      1.83
+    ]
+  },
+  "R2-2": {
+    "cells": 4,
+    "point_lt_1pp": 4,
+    "replicated": true,
+    "values_pp": [
+      0.47,
+      0.09,
+      0.19,
+      0.28
+    ]
+  },
+  "R2-3": {
+    "cells": 8,
+    "upper_bound_lt0": 8,
+    "replicated": true,
+    "values_pp": [
+      -6.79,
+      -2.43,
+      -6.08,
+      -2.57,
+      -9.36,
+      -4.5,
+      -8.14,
+      -2.53
+    ]
+  },
+  "R2-4": {
+    "cells": 28,
+    "dP_gt_dC": 28,
+    "replicated": true
+  },
+  "R2-5": {
+    "cells": 16,
+    "LR_gt_RF": 13,
+    "replicated": true
+  }
+}

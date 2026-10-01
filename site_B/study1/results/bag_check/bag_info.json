@@ -1,0 +1,16 @@
+{
+  "n_eval_omega": 255544,
+  "set_sizes": {
+    "thr25": 5433,
+    "thr50": 1096,
+    "thr75": 378,
+    "iso": 54,
+    "small": 664,
+    "settle": 4715,
+    "far": 184503
+  },
+  "c2_builtup": 9704,
+  "c2_builtup_with_any_building": 6965,
+  "c2_bag_built": 3575,
+  "c2_bag_built_labelled_builtup": 3462
+}

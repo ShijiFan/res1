@@ -1,0 +1,3 @@
+learner,season,i28_cross_ba,i28_g12_cross_ba,delta_ba,ci_95_delta_ba,i28_cross_oa,i28_g12_cross_oa,delta_oa,ci_95_delta_oa,delta_urban_recall,delta_forest_recall,transfer_stabilization,ci_95_transfer,excludes_zero,verdict
+RF,Autumn 2024,61.54,66.36,4.82,"[3.16, 6.31]",61.67,61.62,-0.05,"[-1.93, 1.88]",17.31,6.03,0.05,"[-1.62, 1.53]",True,CONFIRMATION HOLDS
+SVC,Autumn 2024,62.57,67.66,5.1,"[2.05, 11.31]",64.31,64.23,-0.08,"[-1.70, 1.10]",15.52,3.21,0.0,"[-3.05, 6.21]",True,CONFIRMATION HOLDS

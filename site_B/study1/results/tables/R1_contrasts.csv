@@ -1,0 +1,13 @@
+learner,contrast,metric,A,B,delta,ci_lo,ci_hi,n_valid_boot
+RF,C-main,cross_ba,72.441,67.642,4.8,4.195,6.683,19290
+RF,C-scalar,cross_ba,70.608,64.397,6.211,5.431,8.482,19290
+RF,C-baseline,cross_ba,67.642,64.397,3.245,2.197,4.339,19290
+RF,C-ablation,cross_ba,70.83,70.608,0.222,0.06,0.926,19290
+RF,C-main,cross_oa,89.634,87.526,2.108,1.166,3.409,19290
+RF,C-paired,dcross_minus_din_ba,72.441,67.642,0.383,0.167,1.364,19290
+SVC,C-main,cross_ba,72.229,67.089,5.14,4.55,6.79,19290
+SVC,C-scalar,cross_ba,69.821,61.085,8.737,7.466,10.953,19290
+SVC,C-baseline,cross_ba,67.089,61.085,6.004,4.488,7.387,19290
+SVC,C-ablation,cross_ba,70.07,69.821,0.249,0.13,0.694,19290
+SVC,C-main,cross_oa,89.3,87.328,1.972,0.881,3.508,19290
+SVC,C-paired,dcross_minus_din_ba,72.229,67.089,-0.323,-0.529,-0.002,19290

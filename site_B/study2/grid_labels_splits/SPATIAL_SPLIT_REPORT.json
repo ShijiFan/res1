@@ -1,0 +1,411 @@
+{
+  "generated_utc": "2026-09-30T16:34:28+00:00",
+  "seed": 20260930,
+  "num_folds": 6,
+  "buffer_distance_m": 400.0,
+  "active_blocks_count": 66,
+  "block_assignments": {
+    "66_1169": 0,
+    "71_1175": 1,
+    "69_1174": 2,
+    "67_1176": 3,
+    "72_1175": 4,
+    "70_1174": 5,
+    "70_1172": 0,
+    "73_1177": 1,
+    "67_1175": 2,
+    "68_1171": 3,
+    "68_1175": 4,
+    "68_1173": 5,
+    "73_1172": 0,
+    "72_1176": 1,
+    "73_1169": 2,
+    "73_1170": 3,
+    "73_1173": 4,
+    "70_1175": 5,
+    "71_1172": 0,
+    "69_1170": 1,
+    "69_1176": 2,
+    "69_1177": 3,
+    "71_1171": 4,
+    "69_1172": 5,
+    "68_1169": 0,
+    "68_1176": 1,
+    "71_1173": 2,
+    "66_1170": 3,
+    "68_1177": 4,
+    "73_1175": 5,
+    "71_1174": 0,
+    "66_1171": 1,
+    "67_1172": 2,
+    "67_1173": 3,
+    "68_1174": 4,
+    "67_1171": 5,
+    "71_1169": 0,
+    "72_1174": 1,
+    "70_1177": 2,
+    "72_1171": 3,
+    "72_1173": 4,
+    "73_1176": 5,
+    "72_1169": 0,
+    "69_1169": 1,
+    "70_1169": 2,
+    "73_1174": 3,
+    "68_1172": 4,
+    "70_1171": 5,
+    "71_1170": 0,
+    "70_1173": 1,
+    "68_1170": 2,
+    "67_1174": 3,
+    "73_1171": 4,
+    "72_1170": 5,
+    "67_1169": 0,
+    "72_1177": 1,
+    "72_1172": 2,
+    "69_1171": 3,
+    "69_1175": 4,
+    "71_1176": 5,
+    "67_1170": 0,
+    "67_1177": 1,
+    "70_1176": 2,
+    "70_1170": 3,
+    "69_1173": 4,
+    "71_1177": 5
+  },
+  "years": {
+    "2024": {
+      "split_csv": "E:\\research\\SAR\\site2_20260930\\runs\\G0L_COMMON_GRID\\spatial_splits_2024.csv",
+      "split_sha256": "b6fc1d89666aba77644eeab45f6be18428b866337e33ccc84a27e900c18dc6d3",
+      "support_csv": "E:\\research\\SAR\\site2_20260930\\runs\\G0L_COMMON_GRID\\split_class_support_2024.csv",
+      "support_sha256": "2f7edc9bbf9fbf6e5ea1b135827f03ed45cd2a4243bee74714d3ed1bbf93d513",
+      "total_parcels": 79413,
+      "eligible_parcels": 12852,
+      "folds": {
+        "0": {
+          "test_blocks": 11,
+          "test_parcels_eligible": 1806,
+          "train_parcels_eligible": 10305,
+          "excluded_400m_parcels": 741,
+          "test_support_strict": {
+            "SpringCereal": 200,
+            "Maize": 174,
+            "Potato": 410,
+            "Other": 230,
+            "PermGrass": 346,
+            "Beet": 239,
+            "TempGrass": 195,
+            "WinterCereal": 12
+          },
+          "train_support_strict": {
+            "Potato": 2234,
+            "TempGrass": 1251,
+            "PermGrass": 2125,
+            "Beet": 1186,
+            "Maize": 953,
+            "Other": 1464,
+            "SpringCereal": 963,
+            "WinterCereal": 129
+          }
+        },
+        "1": {
+          "test_blocks": 11,
+          "test_parcels_eligible": 1719,
+          "train_parcels_eligible": 10321,
+          "excluded_400m_parcels": 812,
+          "test_support_strict": {
+            "TempGrass": 180,
+            "PermGrass": 416,
+            "Beet": 190,
+            "Other": 210,
+            "SpringCereal": 181,
+            "Potato": 370,
+            "Maize": 147,
+            "WinterCereal": 25
+          },
+          "train_support_strict": {
+            "Potato": 2254,
+            "SpringCereal": 1000,
+            "Maize": 962,
+            "Other": 1463,
+            "PermGrass": 2039,
+            "Beet": 1241,
+            "TempGrass": 1243,
+            "WinterCereal": 119
+          }
+        },
+        "2": {
+          "test_blocks": 11,
+          "test_parcels_eligible": 2236,
+          "train_parcels_eligible": 9604,
+          "excluded_400m_parcels": 1012,
+          "test_support_strict": {
+            "Potato": 502,
+            "PermGrass": 426,
+            "TempGrass": 288,
+            "Maize": 232,
+            "Other": 266,
+            "SpringCereal": 223,
+            "WinterCereal": 35,
+            "Beet": 264
+          },
+          "train_support_strict": {
+            "SpringCereal": 926,
+            "Maize": 875,
+            "Potato": 2070,
+            "Other": 1409,
+            "PermGrass": 1974,
+            "Beet": 1125,
+            "TempGrass": 1115,
+            "WinterCereal": 110
+          }
+        },
+        "3": {
+          "test_blocks": 11,
+          "test_parcels_eligible": 2194,
+          "train_parcels_eligible": 9661,
+          "excluded_400m_parcels": 997,
+          "test_support_strict": {
+            "Potato": 399,
+            "Maize": 222,
+            "TempGrass": 274,
+            "PermGrass": 575,
+            "Other": 313,
+            "Beet": 228,
+            "SpringCereal": 168,
+            "WinterCereal": 15
+          },
+          "train_support_strict": {
+            "Potato": 2215,
+            "SpringCereal": 962,
+            "Maize": 891,
+            "Other": 1363,
+            "PermGrass": 1835,
+            "Beet": 1163,
+            "TempGrass": 1102,
+            "WinterCereal": 130
+          }
+        },
+        "4": {
+          "test_blocks": 11,
+          "test_parcels_eligible": 2362,
+          "train_parcels_eligible": 9524,
+          "excluded_400m_parcels": 966,
+          "test_support_strict": {
+            "PermGrass": 417,
+            "Beet": 269,
+            "Potato": 510,
+            "SpringCereal": 207,
+            "Other": 431,
+            "Maize": 184,
+            "TempGrass": 297,
+            "WinterCereal": 47
+          },
+          "train_support_strict": {
+            "Potato": 2071,
+            "SpringCereal": 924,
+            "Maize": 932,
+            "Other": 1202,
+            "PermGrass": 2041,
+            "Beet": 1137,
+            "TempGrass": 1117,
+            "WinterCereal": 100
+          }
+        },
+        "5": {
+          "test_blocks": 11,
+          "test_parcels_eligible": 2535,
+          "train_parcels_eligible": 9309,
+          "excluded_400m_parcels": 1008,
+          "test_support_strict": {
+            "Potato": 620,
+            "PermGrass": 432,
+            "Beet": 335,
+            "SpringCereal": 258,
+            "Maize": 238,
+            "TempGrass": 297,
+            "Other": 333,
+            "WinterCereal": 22
+          },
+          "train_support_strict": {
+            "Potato": 1925,
+            "SpringCereal": 862,
+            "Maize": 875,
+            "Other": 1322,
+            "PermGrass": 2024,
+            "Beet": 1057,
+            "TempGrass": 1129,
+            "WinterCereal": 115
+          }
+        }
+      }
+    },
+    "2025": {
+      "split_csv": "E:\\research\\SAR\\site2_20260930\\runs\\G0L_COMMON_GRID\\spatial_splits_2025.csv",
+      "split_sha256": "a87e790bb1cd5ef6b9abcac9abaccbeeb55ea968586b0c3eb6f7fddb86cc18af",
+      "support_csv": "E:\\research\\SAR\\site2_20260930\\runs\\G0L_COMMON_GRID\\split_class_support_2025.csv",
+      "support_sha256": "21bc565ed9571c62ac2eefb0a94e1d98843e36bdf7b4cd56fa32c1de8e78e091",
+      "total_parcels": 73149,
+      "eligible_parcels": 12746,
+      "folds": {
+        "0": {
+          "test_blocks": 11,
+          "test_parcels_eligible": 1761,
+          "train_parcels_eligible": 10247,
+          "excluded_400m_parcels": 738,
+          "test_support_strict": {
+            "Potato": 423,
+            "WinterCereal": 57,
+            "Other": 212,
+            "Beet": 220,
+            "Maize": 161,
+            "PermGrass": 327,
+            "TempGrass": 188,
+            "SpringCereal": 173
+          },
+          "train_support_strict": {
+            "Potato": 2278,
+            "PermGrass": 2044,
+            "Other": 1443,
+            "Maize": 948,
+            "TempGrass": 1267,
+            "SpringCereal": 866,
+            "Beet": 1061,
+            "WinterCereal": 340
+          }
+        },
+        "1": {
+          "test_blocks": 11,
+          "test_parcels_eligible": 1711,
+          "train_parcels_eligible": 10225,
+          "excluded_400m_parcels": 810,
+          "test_support_strict": {
+            "TempGrass": 180,
+            "Potato": 367,
+            "PermGrass": 400,
+            "Other": 220,
+            "Maize": 168,
+            "SpringCereal": 130,
+            "Beet": 183,
+            "WinterCereal": 63
+          },
+          "train_support_strict": {
+            "Potato": 2319,
+            "WinterCereal": 333,
+            "Other": 1398,
+            "Beet": 1123,
+            "Maize": 932,
+            "PermGrass": 1956,
+            "TempGrass": 1258,
+            "SpringCereal": 906
+          }
+        },
+        "2": {
+          "test_blocks": 11,
+          "test_parcels_eligible": 2217,
+          "train_parcels_eligible": 9515,
+          "excluded_400m_parcels": 1014,
+          "test_support_strict": {
+            "TempGrass": 299,
+            "Potato": 504,
+            "Maize": 211,
+            "PermGrass": 408,
+            "Other": 252,
+            "WinterCereal": 83,
+            "Beet": 234,
+            "SpringCereal": 226
+          },
+          "train_support_strict": {
+            "Potato": 2151,
+            "WinterCereal": 298,
+            "Other": 1371,
+            "Beet": 1030,
+            "Maize": 870,
+            "PermGrass": 1891,
+            "TempGrass": 1116,
+            "SpringCereal": 788
+          }
+        },
+        "3": {
+          "test_blocks": 11,
+          "test_parcels_eligible": 2186,
+          "train_parcels_eligible": 9545,
+          "excluded_400m_parcels": 1015,
+          "test_support_strict": {
+            "Maize": 218,
+            "TempGrass": 282,
+            "Other": 286,
+            "Beet": 221,
+            "Potato": 399,
+            "PermGrass": 563,
+            "WinterCereal": 50,
+            "SpringCereal": 167
+          },
+          "train_support_strict": {
+            "Potato": 2239,
+            "WinterCereal": 350,
+            "Other": 1339,
+            "Beet": 1052,
+            "Maize": 853,
+            "PermGrass": 1756,
+            "TempGrass": 1111,
+            "SpringCereal": 845
+          }
+        },
+        "4": {
+          "test_blocks": 11,
+          "test_parcels_eligible": 2328,
+          "train_parcels_eligible": 9444,
+          "excluded_400m_parcels": 974,
+          "test_support_strict": {
+            "Beet": 236,
+            "Potato": 532,
+            "Maize": 187,
+            "TempGrass": 290,
+            "PermGrass": 397,
+            "Other": 410,
+            "WinterCereal": 99,
+            "SpringCereal": 177
+          },
+          "train_support_strict": {
+            "Potato": 2091,
+            "WinterCereal": 283,
+            "Other": 1177,
+            "Beet": 1022,
+            "Maize": 909,
+            "PermGrass": 1971,
+            "TempGrass": 1129,
+            "SpringCereal": 862
+          }
+        },
+        "5": {
+          "test_blocks": 11,
+          "test_parcels_eligible": 2543,
+          "train_parcels_eligible": 9196,
+          "excluded_400m_parcels": 1007,
+          "test_support_strict": {
+            "Potato": 647,
+            "Other": 361,
+            "SpringCereal": 234,
+            "Beet": 287,
+            "WinterCereal": 70,
+            "TempGrass": 309,
+            "Maize": 228,
+            "PermGrass": 407
+          },
+          "train_support_strict": {
+            "Potato": 1947,
+            "WinterCereal": 316,
+            "Other": 1255,
+            "Beet": 974,
+            "Maize": 856,
+            "PermGrass": 1943,
+            "TempGrass": 1122,
+            "SpringCereal": 783
+          }
+        }
+      }
+    }
+  },
+  "leakage_guard_rule": "Strict 5km block partitioning into 6 folds. Eligible parcels within 400m buffer of any test parcel in the fold are excluded from training.",
+  "status": "SPATIAL_SPLITS_BUILT_AND_AUDITED"
+}

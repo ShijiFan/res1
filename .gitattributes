@@ -1,0 +1,8 @@
+# Frozen protocols are hashed with LF line endings; keep them LF on every checkout.
+**/prereg_and_qc/*.md text eol=lf
+**/G0_and_prereg/*.md text eol=lf
+site_A/study1/PROTOCOL.md text eol=lf
+temporal_dl/PROTOCOL.md text eol=lf
+*.parquet binary
+*.npz binary
+*.npy binary

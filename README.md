@@ -1,209 +1,98 @@
-# Cross-Track Sentinel-1 Land-Cover Classification with Two-Acquisition Interferometric Coherence
+# When Does Repeat-Pass Coherence Add Information?
 
-[![Paper](https://img.shields.io/badge/IEEE_TGRS-Under_Review-blue.svg)](https://github.com/ShijiFan/res1)
-[![Python](https://img.shields.io/badge/Python-3.10%2B-brightgreen.svg)](https://www.python.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Reproducibility](https://img.shields.io/badge/Results-100%25_Verified-success.svg)](scripts/reproduce_all_tables.py)
+Code, frozen protocols, result tables and predictions for the manuscript
 
-Official open-source repository and reproducibility package for the paper:  
-**"Cross-Track Sentinel-1 Land-Cover Classification with Two-Acquisition Interferometric Coherence"**  
-Submitted to *IEEE Transactions on Geoscience and Remote Sensing (TGRS)*.
+> S. Fan, D. Albuquerque, P. Pinho, and M. Shen, "When Does Repeat-Pass Coherence Add Information?
+> Sentinel-1 Land-Cover and Crop Mapping Across Acquisition Budgets, Class Definitions, and Spatial
+> Context," submitted to *IEEE Transactions on Geoscience and Remote Sensing*.
 
----
+The paper measures the marginal value of Sentinel-1 12-day VV coherence over backscatter from the same
+acquisitions at two Dutch sites:
 
-## 📖 Overview & Abstract
+- **Study 1** (two acquisitions, five land-cover classes, four tracks T15/T37/T88/T139, May 2024; October
+  2024 temporal replication): pixel classifiers (RF, SVC), a spatial CNN on 9×9 patches, and a check
+  against the Dutch building register (BAG).
+- **Study 2** (acquisition budget M = 1…9 pairs, seven BRP crop classes, tracks T37/T88, 2025 and 2024):
+  HGB/RF/LR budget curves, equal-cost comparisons, polarization, and a TempCNN temporal baseline.
 
-Interferometric coherence records temporal scattering stability that complements SAR backscatter intensity. Its contribution to cross-track land-cover classification at a strict two-acquisition observation budget ($N = 2$) is the focus of this study. 
+Site A (Gelderland–Overijssel) is the development site. Site B (Groningen–Drenthe) is an independent
+replication run under a protocol frozen before any site-B SAR data were processed.
 
-We evaluate four Sentinel-1 tracks over the eastern Netherlands, spanning ascending and descending passes and $12.2^\circ$ in incidence angle. A single 12-day coherence measurement augments a 28-dimensional intensity representation derived from the same image pair. Spatial model selection and evaluation use a 400 m training exclusion ($k$-d tree guard), with three sampling seeds and twelve directed cross-track transfers.
+## Repository layout
 
-```
-       [ Sentinel-1 Single-Look Complex (SLC) Pair: t1, t2 ]
-                               │
-         ┌─────────────────────┴─────────────────────┐
-         ▼                                           ▼
-[ SAR Intensity Backscatter ]             [ InSAR Coherence ]
-  - Dual-pol: VV, VH (dB)                   - 12-day repeat-pass correlation
-  - Cross-ratio RT = VH - VV                - Scalar coherence magnitude g12
-  - Multi-scale spatial statistics          - Derived transforms (Sobel, text.)
-  ───► Base Intensity: I8 (8-D)             ───► Scalar Coherence: I8 + g12 (9-D)
-  ───► Full Baseline:  I28 (28-D)           ───► Full Fusion:      I28 + g12 (29-D)
-                               │
-                               ▼
-        [ 400 m Spatial Guard + 3-Fold Spatial Cross-Validation ]
-                               │
-                               ▼
-     [ 12 Directed Cross-Track Transfers (RF & SVC Across 4 Tracks) ]
-  Delta BA = +6.30 pp [5.25, 8.19] (RF)  |  Delta BA = +6.99 pp [5.78, 9.39] (SVC)
-  Built-up Recall: 67.2% -> 90.7% (RF)   |  Built-up Recall: 66.6% -> 93.0% (SVC)
-```
+| Path | Contents |
+|---|---|
+| `site_A/study1/` | Study 1 at site A: `PROTOCOL.md` (γ0 rerun protocol, frozen before results), `RESULTS.md`, `scripts/s1…s16`, `results/` (tables, BCa intervals, CNN checks, BAG check, selected configs, splits), `predictions/` (per-pixel predictions, per-block confusion matrices) |
+| `site_A/study2/` | Study 2 at site A: `prereg_and_qc/` (pre-registration, E0 QC, R2 robustness check), `scripts/` (`a1_s1…a1_s9`, `a1_r2_*`, G0 audit/manifest scripts), `manifests/`, `grid_labels_splits/` (grid, parcel tables, spatial folds), `results/stats*`, `predictions/` (experiment registry and per-parcel predictions) |
+| `site_B/` | Replication: `G0_and_prereg/` (feasibility check, pre-registration), `scripts/` (`s2_01…s2_20`, run scripts), `manifests/`, `study1/`, `study2/` (same structure as site A), `RESULTS_SITE2.md`, `RESULTS_SITE2_STUDY2_CRITERIA.json` |
+| `temporal_dl/` | TempCNN baseline for Study 2 at both sites: `PROTOCOL.md`, `tdl_run.py`, `tdl_stats.py`, per-site registries, predictions, paired cells and judgement |
+| `figures/` | `make_figures.py`, which builds every manuscript figure from the tables above |
+| `src/` | Shared Study 1 training/evaluation code (`run_R1_buffered_cv_retrain.py`), imported unchanged by the site-A v7 and site-B scripts |
+| `legacy_v1_A0/` | **Superseded.** The earlier single-site A0 package (σ0/γ0-mixed intensity, dB-domain resampling). Kept for provenance only; all numbers in the current manuscript come from the folders above |
+| `tools/assemble_release.py` | Script that copied this release from the working folders |
 
-### 🎯 Key Headline Findings
+Protocols, result notes and reports were written in Chinese during the project; tables, code and
+comments are in English.
 
-1. **Substantial Accuracy Gain**: Coherence increases five-class balanced accuracy by **$+6.30\pp$** ($95\%$ block-bootstrap interval: $[5.25, 8.19]$) for Random Forest and **$+6.99\pp$** ($[5.78, 9.39]$) for Support Vector Classifier.
-2. **Built-Up Class Recovery**: The largest gain is concentrated in built-up land cover: its misclassification as forest falls from $17.5\%$ to $0.8\%$ for Random Forest, driving a **$+23.5\pp$** (RF) and **$+26.4\pp$** (SVC) recall jump.
-3. **Compact Representation Sufficiency**: The compact 9-dimensional representation ($I_8 + g_{12}$) captures over $95\%$ of the total accuracy gain achieved by larger feature sets; complex spatial coherence derivatives ($F_{12}$) offer no statistically distinguishable improvement over the raw scalar $g_{12}$.
-4. **Temporal Robustness**: Spring-trained models transferred to autumn acquisitions retain balanced-accuracy gains of **$+5.03\pp$** (RF) and **$+5.23\pp$** (SVC).
+## Frozen protocols
 
----
+Each protocol was hashed (SHA-256, LF line endings) before the results it governs were computed.
 
-## 📂 Repository Structure
+| Protocol | SHA-256 |
+|---|---|
+| `site_A/study2/prereg_and_qc/A1_PREREG.md` | `629ef45fde055988650754b5e8f79f89a3b811b762f5ad1eb1e1971b89d2c2eb` |
+| `site_B/study2/prereg_and_qc/SITE2_PREREG.md` (frozen copy) | `58970ccc7c7732eefbc9244a28b4809b3f3beb05bc9c13bd5e6803627bde93e5` |
+| `temporal_dl/PROTOCOL.md` | `de5a7cd5ee23915f28d8282683ff561f8eb1dec5729d96129864e0b788cc6add` |
 
-```
-ShijiFan/res1/
-├── README.md                      # Project documentation and reproduction guide
-├── LICENSE                        # MIT License
-├── requirements.txt               # Pinned Python package dependencies
-├── environment.yml                # Conda environment definition
-├── .gitignore                     # Git ignore rules
-│
-├── configs/                       # Acquisition parameters and feature ladder specs
-│   └── dataset_parameters.json    # Track geometry (T15, T37, T88, T139; theta: 32.8° - 45.0°)
-│
-├── splits/                        # Spatial partition definitions
-│   └── split_manifest.json        # 40 spatial blocks (28 train, 12 test) & 400 m exclusion
-│
-├── src/                           # Core algorithmic pipeline
-│   ├── feature_pipeline.py        # 5-level representation ladder feature extraction
-│   ├── compute_coherence.py       # Normalized complex correlation calculation
-│   ├── spatial_cv.py              # 3-fold spatial cross-validation with k-d tree buffer
-│   ├── train_models.py            # Model training (RF 300 trees, RBF-SVC)
-│   ├── cross_track_eval.py        # 12 directed cross-track transfers evaluation
-│   └── bootstrap_inference.py     # 20,000 spatial block-bootstrap resamples & sign test
-│
-├── scripts/                       # High-level reproduction and figure generation scripts
-│   ├── reproduce_all_tables.py    # 1-Click reproduction of Tables I, II, III, IV, V
-│   ├── reproduce_all_figures.py   # 1-Click rendering of Figures 1 to 14
-│   └── figures/                   # IEEE Transactions Times-style matplotlib figure scripts
-│       ├── tgrs_style.py          # Times New Roman + STIX math style sheet
-│       ├── fig2_partitions.py     # Study area and block partitioning (Fig. 2)
-│       ├── fig4_perclass.py       # Per-class recall decomposition (Fig. 7)
-│       └── fig6_coherence_distributions.py # Coherence distributions & stability (Fig. 8)
-│
-├── tables/                        # Precomputed benchmark results & audit CSVs
-│   ├── T1_contrasts.csv           # Canonical headline contrasts and confidence intervals
-│   ├── T1_main_results.csv        # Detailed per-seed cross-track metrics
-│   ├── T1_per_class.csv           # Per-class confusion matrices and recall numbers
-│   └── T1_transfer_matrix.csv     # Complete 4x4 transfer matrices
-│
-├── runs_R1/                       # Complete 120 evaluation run folders (400 m buffer protocol)
-│   ├── RF_I8_t15_s17/             # Saved blocks_confusion.npy, predictions.parquet, parameters
-│   └── ...                        # All 120 learner x representation x track x seed runs
-│
-└── manuscript/                    # Manuscript sources and compiled PDFs
-    ├── main_tgrs.pdf              # Authoritative manuscript PDF (12 pages, hyperref blue links)
-    ├── supplement.pdf             # Supplementary material PDF (5 pages)
-    ├── main_tgrs.tex              # Main LaTeX document
-    ├── supplement.tex             # Supplement LaTeX document
-    └── references.bib             # 48 verified IEEE references (72.9% 2024-2026)
-```
+`site_B/G0_and_prereg/PREREG_SITE2.md` is the same document with deviation note D1 appended on
+2026-10-01, before any site-B Study 1 result existed; it therefore no longer matches the frozen hash.
+Verify with `sha256sum` (or `certutil -hashfile <file> SHA256` on Windows).
 
----
+## Data sources
 
-## ⚡ Quickstart: 1-Click Reproduction
+No SAR rasters, data cubes or trained models are included (they total several hundred GB and are
+rebuildable). All inputs are public:
 
-You can reproduce all benchmark tables, balanced accuracy contrasts, overall accuracy gains, and class recall breakdowns in **less than 2 seconds** directly from the included evaluation tensors:
+- **Sentinel-1** IW SLC scenes (ESA Copernicus), processed by **ASF HyP3** (GAMMA): `RTC_GAMMA`
+  (γ0 power, 20 m; 10 m for the site-A autumn window; Copernicus GLO-30 DEM) and `INSAR_GAMMA`
+  (10×2 looks, Goldstein–Werner α = 0.6, water mask). Scene and pair lists are in the `manifests/`
+  folders and `results/cube_index/PRODUCT_INDEX.csv`; job parameters are in the submission scripts.
+- **ESA WorldCover 2021** and **CORINE Land Cover 2018** (Study 1 labels).
+- **BRP Gewaspercelen**, definitive releases 2024 and 2025 (PDOK; Study 2 labels).
+- **BAG** building register (PDOK OGC API), downloaded by `s9_download_bag.py` / `s2_17_download_bag.py`.
+
+HyP3 submission needs NASA Earthdata credentials, read from `~/.netrc` or the environment variables
+`EARTHDATA_USERNAME` / `EARTHDATA_PASSWORD`. No credentials are stored in this repository.
+
+## Reproducing
 
 ```bash
-# 1. Clone the repository
-git clone https://github.com/ShijiFan/res1.git
-cd res1
-
-# 2. Install dependencies (or use an existing conda environment)
-pip install -r requirements.txt
-
-# 3. Run the 1-click reproduction script
-python scripts/reproduce_all_tables.py
+conda env create -f environment.yml   # env "sar-tgrs", Python 3.10
+conda activate sar-tgrs
 ```
 
-### Expected Output
+The scripts were run from working folders on the authors' machine and contain those absolute paths
+(`E:\research\SAR\...`); set them to your own layout before running. The mapping is:
 
-```
-================================================================================
-  IEEE TGRS BENCHMARK TABLE REPRODUCTION
-  Cross-Track Sentinel-1 Land-Cover Classification (Two-Acquisition Coherence)
-================================================================================
-Successfully loaded all 120 evaluation confusion tensors from runs_R1/
+| Release folder | Original working folder |
+|---|---|
+| `site_A/study1` | `SAR/A0_gamma0_rerun_20260929` (outputs under `ws/`) |
+| `site_A/study2` | `SAR/A1_observation_budget_20260923` (main run `runs/20260924_A1_MAIN`) |
+| `site_B` | `SAR/site2_20260930` and `SAR/site2_G0_20260930` |
+| `temporal_dl` | `SAR/temporal_dl_20261001` |
+| `src` | `SAR/res1_clean/src` |
 
---------------------------------------------------------------------------------
-TABLE I: Cross-Track Balanced Accuracy (BA), Overall Accuracy (OA), and Transfer Gap (G)
---------------------------------------------------------------------------------
-Learner Representation                       Cross-BA (%)     In-BA (%)      Gap G (pp)  
---------------------------------------------------------------------------------
-RF     I_8 (8-D Base Intensity)              64.36 +/- 0.48    69.06 +/- 0.39    +4.70
-RF     I_28 (28-D Full Intensity Baseline)   67.03 +/- 0.32    71.78 +/- 0.43    +4.76
-RF     I_8 + g_12 (9-D Scalar Coherence)     72.97 +/- 0.34    77.32 +/- 0.58    +4.35
-RF     F_12 (12-D Coherence Transforms)      72.69 +/- 0.59    77.16 +/- 0.70    +4.47
-RF     I_28 + g_12 (29-D Full Fusion)        73.33 +/- 0.45    77.44 +/- 0.41    +4.12
-SVC    I_8 (8-D Base Intensity)              63.99 +/- 0.43    68.90 +/- 0.43    +4.91
-SVC    I_28 (28-D Full Intensity Baseline)   66.72 +/- 0.11    71.46 +/- 0.07    +4.74
-SVC    I_8 + g_12 (9-D Scalar Coherence)     74.09 +/- 0.39    77.95 +/- 0.52    +3.86
-SVC    F_12 (12-D Coherence Transforms)      73.89 +/- 0.23    77.78 +/- 0.46    +3.89
-SVC    I_28 + g_12 (29-D Full Fusion)        73.71 +/- 0.35    78.15 +/- 0.42    +4.44
+Order of execution: site A Study 1 `run_pipeline.sh` then `run_checks.sh`; site A Study 2
+`a1_s1` … `a1_s9`, then `a1_r2_*`; site B `run_site2_s2.sh` (Study 2) and `run_site2_s1.sh` (Study 1),
+then `s2_20_judge_study2.py`; `temporal_dl/run_all.sh`; finally `figures/make_figures.py`.
 
---------------------------------------------------------------------------------
-KEY HEADLINE FINDINGS (Paired Coherence Increment over I_28 Intensity Baseline):
---------------------------------------------------------------------------------
-[RF] Balanced Accuracy : 67.03% -> 73.33%  (Increment Delta = +6.30 pp)
-[RF] Overall Accuracy  : 69.42% -> 71.37%  (Increment Delta = +1.95 pp)
-[SVC] Balanced Accuracy : 66.72% -> 73.71%  (Increment Delta = +6.99 pp)
-[SVC] Overall Accuracy  : 71.13% -> 72.78%  (Increment Delta = +1.64 pp)
+The statistical summaries (bootstrap intervals, paired contrasts, replication criteria) can be
+recomputed from the included predictions and confusion matrices without any SAR data, e.g.
+`site_A/study1/scripts/s5_t1_v7.py`, `s11_contrasts.py`, `s16_autumn_blocks.py`,
+`site_A/study2/scripts/a1_s7_stats.py`, `a1_r2_stats.py`, `site_B/scripts/s2_15_bootstrap.py`, and
+`temporal_dl/tdl_stats.py`.
 
---------------------------------------------------------------------------------
-TABLE II: Class-Level Recall Breakdown (Pooled over 12 Transfers and 3 Seeds)
---------------------------------------------------------------------------------
-Class Name   RF Baseline    RF Augmented   RF Delta   SVC Baseline   SVC Augmented  SVC Delta 
---------------------------------------------------------------------------------
-Forest        76.15%         81.13%         +4.97 pp    78.30%         82.92%         +4.61 pp
-Grassland     76.49%         76.97%         +0.48 pp    81.86%         81.82%         -0.04 pp
-Cropland      45.95%         47.19%         +1.24 pp    38.52%         39.69%         +1.18 pp
-Built-up      67.22%         90.71%        +23.48 pp    66.63%         93.01%        +26.38 pp
-Water         69.30%         70.64%         +1.34 pp    68.30%         71.12%         +2.83 pp
---------------------------------------------------------------------------------
-```
+## License
 
----
-
-## 🎨 Figure Reproduction
-
-To re-render all manuscript publication figures matching IEEE Transactions Times typography:
-
-```bash
-python scripts/reproduce_all_figures.py
-```
-
-Generated vector PDFs will be stored in `manuscript/figures/`.
-
----
-
-## 🔎 A1 follow-up study resources
-
-For the planned Sentinel-1 crop-mapping observation-budget study, see the
-[verified paper, dataset and code map](docs/a1/REFERENCE_PACK_20260923.md) and
-[Gemini Antigravity reference handoff](docs/a1/GEMINI_REFERENCE_HANDOFF.md).
-These are planning materials; they do not report completed A1 experiments.
-
----
-
-## 📚 Citation
-
-If you find this research, code, or benchmark datasets helpful, please cite our paper:
-
-```bibtex
-@article{Fan2026CrossTrackCoherence,
-  author    = {Fan, Shiji and Albuquerque, Daniel and Pinho, Pedro and Shen, Ming},
-  title     = {Cross-Track {Sentinel-1} Land-Cover Classification with Two-Acquisition Interferometric Coherence},
-  journal   = {IEEE Transactions on Geoscience and Remote Sensing},
-  year      = {2026},
-  note      = {Under Review},
-  url       = {https://github.com/ShijiFan/res1}
-}
-```
-
----
-
-## 📄 License & Acknowledgments
-
-- **Code & Scripts**: Licensed under the [MIT License](LICENSE).
-- **Data & Products**: Sentinel-1 SAR data is provided by the European Space Agency (ESA) via the Alaska Satellite Facility (ASF) HyP3 platform. Land cover references are from ESA WorldCover 10 m and EEA CORINE Land Cover 2018.
-- **Funding**: This work is funded by national funds through FCT--Fundação para a Ciência e a Tecnologia, I.P., and EU funds under project/support UID/50008/2025--Instituto de Telecomunicações (DOI: [10.54499/UID/50008/2025](https://doi.org/10.54499/UID/50008/2025)).
+MIT (see `LICENSE`). Third-party data keep their own licenses (Copernicus, ESA WorldCover CC BY 4.0,
+CORINE, PDOK/BRP and BAG open data).

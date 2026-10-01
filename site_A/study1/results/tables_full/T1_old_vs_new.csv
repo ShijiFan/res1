@@ -1,0 +1,5 @@
+learner,metric,old_cross_baseline,new_cross_baseline,old_cross_augmented,new_cross_augmented,old_delta_cross,new_delta_cross,old_in_baseline,new_in_baseline,old_in_augmented,new_in_augmented,old_delta_in,new_delta_in,old_delta_cross_minus_delta_in,new_delta_cross_minus_delta_in
+RF,BA,67.0252,67.3105,73.3278,72.1442,6.3026,4.8336,71.7817,71.7818,77.4438,76.2692,5.6621,4.4874,0.6405,0.3462
+RF,OA,69.4152,71.0024,71.3683,72.5346,1.9531,1.5322,73.0312,74.2437,74.7214,75.7618,1.6901,1.5181,0.263,0.0141
+SVC,BA,66.7204,67.3413,73.7118,72.8191,6.9914,5.4778,71.4586,71.2931,78.1524,76.6373,6.6937,5.3442,0.2976,0.1336
+SVC,OA,71.1348,73.101,72.7763,74.3086,1.6415,1.2076,74.4497,75.9327,75.8984,77.1345,1.4488,1.2018,0.1927,0.0058

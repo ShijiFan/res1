@@ -1,0 +1,15 @@
+year,gewascode,dutch_name,current_class,all_parcels,eligible_parcels_ge2,strict_season_class
+2024,238,Haver,SpringCereal,46,17,Other
+2024,314,Triticale,WinterCereal,94,53,Other
+2024,382,Spelt,WinterCereal,5,3,Other
+2024,670,Japanse haver,SpringCereal,4,2,Other
+2024,2652,"Granen, overig",SpringCereal,192,7,Other
+2024,6636,Naakte haver,SpringCereal,2,1,Other
+2024,7130,"Rogge, korrelgewas",WinterCereal,119,26,Other
+2025,238,Haver,SpringCereal,34,8,Other
+2025,314,Triticale,WinterCereal,94,45,Other
+2025,382,Spelt,WinterCereal,4,4,Other
+2025,670,Japanse haver,SpringCereal,7,4,Other
+2025,2652,"Granen, overig",SpringCereal,192,16,Other
+2025,6636,Naakte haver,SpringCereal,3,1,Other
+2025,7130,"Rogge, korrelgewas",WinterCereal,141,44,Other

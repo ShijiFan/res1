@@ -1,0 +1,15 @@
+contrast_id,learner,metric,point_estimate,ci_lo,ci_hi,excludes_zero,n_boot,n_valid_boot
+C-main,RF,cross_ba,5.2139,4.3474,6.8117,True,20000,19306
+C-main,RF,cross_oa,1.5376,1.1198,1.9657,True,20000,19306
+C-paired,RF,delta_cross_minus_delta_in_ba,0.5698,0.1204,0.8745,True,20000,19306
+C-paired,RF,delta_cross_minus_delta_in_oa,0.0315,-0.1325,0.2115,False,20000,19306
+C-ablation,RF,cross_ba,0.2895,0.0005,0.6404,True,20000,19306
+C-scalar,RF,cross_ba,6.8988,5.6559,8.6931,True,20000,19306
+C-baseline,RF,cross_ba,2.628,1.8179,3.6988,True,20000,19306
+C-main,SVC,cross_ba,6.0093,4.8483,8.1318,True,20000,19306
+C-main,SVC,cross_oa,1.3634,1.0026,1.7443,True,20000,19306
+C-paired,SVC,delta_cross_minus_delta_in_ba,0.0359,-0.5741,0.6299,False,20000,19306
+C-paired,SVC,delta_cross_minus_delta_in_oa,0.0978,-0.0396,0.2607,False,20000,19306
+C-ablation,SVC,cross_ba,0.2813,-0.0852,0.5947,False,20000,19306
+C-scalar,SVC,cross_ba,7.9551,6.2773,10.1279,True,20000,19306
+C-baseline,SVC,cross_ba,2.8853,2.0735,3.8526,True,20000,19306

@@ -1,0 +1,35 @@
+{
+  "T1": {
+    "cells_M_le_2": 8,
+    "DL_stronger_than_HGB_O2": 8,
+    "all_cells_DL_minus_HGB_O2": [
+      3.96,
+      2.68,
+      1.61,
+      0.67,
+      4.52,
+      1.26,
+      1.07,
+      0.58,
+      5.34,
+      3.4,
+      2.3,
+      1.86,
+      5.22,
+      3.62,
+      1.57,
+      1.51
+    ]
+  },
+  "T2": {
+    "applicable": true,
+    "cells": 8,
+    "dC_DL_lt_dC_HGB": 6,
+    "verdict": "CONSISTENT"
+  },
+  "T3": {
+    "cells": 4,
+    "dC_DL_lt_1pp": 4,
+    "verdict": true
+  }
+}

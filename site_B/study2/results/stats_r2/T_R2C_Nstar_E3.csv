@@ -1,0 +1,5 @@
+year,track,Nstar_E3,defined,rule,status
+2024,37,6,True,smallest M from which the upper 95% bound of the E3 dC stays < 1 pp for all larger M,EXPLORATORY
+2024,88,8,True,smallest M from which the upper 95% bound of the E3 dC stays < 1 pp for all larger M,EXPLORATORY
+2025,37,6,True,smallest M from which the upper 95% bound of the E3 dC stays < 1 pp for all larger M,EXPLORATORY
+2025,88,4,True,smallest M from which the upper 95% bound of the E3 dC stays < 1 pp for all larger M,EXPLORATORY

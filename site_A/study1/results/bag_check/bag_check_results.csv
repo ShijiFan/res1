@@ -1,0 +1,5 @@
+learner,metric,I28_pct,I28_G29_pct,delta_pp,ci_lo,ci_hi
+RF,bag_built_recall,61.506,52.841,-8.665,-14.705,-4.407
+RF,far_false_builtup_rate,1.988,0.466,-1.521,-1.847,-1.168
+SVC,bag_built_recall,57.759,53.296,-4.463,-9.668,-0.753
+SVC,far_false_builtup_rate,1.677,0.531,-1.147,-1.369,-0.883

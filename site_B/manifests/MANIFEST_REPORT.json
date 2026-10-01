@@ -1,0 +1,16 @@
+{
+  "aoi": [
+    6.55,
+    52.75,
+    7.05,
+    53.1
+  ],
+  "n_scenes": 223,
+  "n_pairs_candidate": 153,
+  "jobs_new": 66,
+  "jobs_new_rtc": 44,
+  "jobs_new_insar": 22,
+  "reused_site1": 54,
+  "credits_new": 990,
+  "t88_design_equals_site1": true
+}

@@ -1,0 +1,27 @@
+{
+  "n_features_total": 424794,
+  "n_kept": 370850,
+  "keep_status": [
+    "Pand buiten gebruik",
+    "Pand in gebruik",
+    "Pand in gebruik (niet ingemeten)",
+    "Sloopvergunning verleend",
+    "Verbouwing pand"
+  ],
+  "bouwjaar_max": 2024,
+  "demolished_after_kept": "2024-05-31",
+  "n_late_demolished": 5883,
+  "fine_resolution_m": 4.0,
+  "status_counts": {
+    "Pand in gebruik": 367377,
+    "Pand gesloopt": 44820,
+    "Pand ten onrechte opgevoerd": 3372,
+    "Niet gerealiseerd pand": 2821,
+    "Bouwvergunning verleend": 2683,
+    "Verbouwing pand": 1434,
+    "Bouw gestart": 1094,
+    "Sloopvergunning verleend": 824,
+    "Pand in gebruik (niet ingemeten)": 348,
+    "Pand buiten gebruik": 21
+  }
+}

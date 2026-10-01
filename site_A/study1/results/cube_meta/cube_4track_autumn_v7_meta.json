@@ -1,0 +1,130 @@
+{
+  "generated": "2026-09-29T18:53:54+00:00",
+  "script": "A0_gamma0_rerun_20260929/scripts/s6_build_autumn_v7.py",
+  "derived_from": {
+    "file": "E:\\research\\SAR\\tgrs_revision\\data_autumn\\cube_4track_autumn.npz",
+    "sha256": "afc8a3ecc78580ca17d4554a119cea2e3c659ab7ee72417443301ff313a84189"
+  },
+  "intensity": "HyP3 RTC10 gamma0 power; linear-domain area average to 40 m, then 10*log10",
+  "tracks": {
+    "t15": {
+      "valid_px": 1039281,
+      "old_valid_px": 1039304,
+      "d1_vv_new_minus_old_median_db": 0.429
+    },
+    "t37": {
+      "valid_px": 1038727,
+      "old_valid_px": 1038738,
+      "d1_vv_new_minus_old_median_db": 0.513
+    },
+    "t88": {
+      "valid_px": 1039288,
+      "old_valid_px": 1039305,
+      "d1_vv_new_minus_old_median_db": 0.575
+    },
+    "t139": {
+      "valid_px": 624964,
+      "old_valid_px": 624976,
+      "d1_vv_new_minus_old_median_db": 0.594
+    }
+  },
+  "input_files": {
+    "t15_d1_vv": {
+      "file": "S1A_IW_20241001T171722_DVP_RTC10_G_gpuned_4EDC_VV.tif",
+      "sha256": "0937518cbe17adbc68ae5f5ab0a15fa7795cb7a468bc139cd0abf37526d1eb78",
+      "src_crs": "EPSG:32632",
+      "native_median_linear": 0.106364
+    },
+    "t15_d1_vh": {
+      "file": "S1A_IW_20241001T171722_DVP_RTC10_G_gpuned_4EDC_VH.tif",
+      "sha256": "28ee2a640d94c4c88c3bd114b76ecffbfefb9e76175c0b6bae70ef0ffe64e0b8",
+      "src_crs": "EPSG:32632",
+      "native_median_linear": 0.024755
+    },
+    "t15_d2_vv": {
+      "file": "S1A_IW_20241013T171722_DVP_RTC10_G_gpuned_5C73_VV.tif",
+      "sha256": "7c883ed1f382557da6e9afb82cf0c2c244586aa3dec8ee5bdb8878f50c3e8586",
+      "src_crs": "EPSG:32632",
+      "native_median_linear": 0.090811
+    },
+    "t15_d2_vh": {
+      "file": "S1A_IW_20241013T171722_DVP_RTC10_G_gpuned_5C73_VH.tif",
+      "sha256": "821cc5dd9d4ce0df91e15f91326c89b9618b862986d7467be354376752ab839c",
+      "src_crs": "EPSG:32632",
+      "native_median_linear": 0.019225
+    },
+    "t37_d1_vv": {
+      "file": "S1A_IW_20241003T055036_DVP_RTC10_G_gpuned_E737_VV.tif",
+      "sha256": "7a34c020dd885dcc3c689fa021b1176a44bebcca1a58311be43a36a3e5aacc05",
+      "src_crs": "EPSG:32631",
+      "native_median_linear": 0.0917
+    },
+    "t37_d1_vh": {
+      "file": "S1A_IW_20241003T055036_DVP_RTC10_G_gpuned_E737_VH.tif",
+      "sha256": "a3941f1ae4789ccc3f941428b0ea97bfd1d4a78ca413be78f94386b30cd3eadd",
+      "src_crs": "EPSG:32631",
+      "native_median_linear": 0.021001
+    },
+    "t37_d2_vv": {
+      "file": "S1A_IW_20241015T055037_DVP_RTC10_G_gpuned_3F67_VV.tif",
+      "sha256": "ea3b9f159f8221ab026f4a7306d4bbf630548ba0269dcf41dc5dd8d2a86e0087",
+      "src_crs": "EPSG:32631",
+      "native_median_linear": 0.081274
+    },
+    "t37_d2_vh": {
+      "file": "S1A_IW_20241015T055037_DVP_RTC10_G_gpuned_3F67_VH.tif",
+      "sha256": "17353bf5c34cd9009eb68759b2bf20055c228aeb8eded0f787c6569b4419f765",
+      "src_crs": "EPSG:32631",
+      "native_median_linear": 0.017259
+    },
+    "t88_d1_vv": {
+      "file": "S1A_IW_20241006T172529_DVP_RTC10_G_gpuned_90C8_VV.tif",
+      "sha256": "488713712f65e2663a8ea0a3460a78b31f91f9ef85265a3ae4407367b13bc0d8",
+      "src_crs": "EPSG:32631",
+      "native_median_linear": 0.075408
+    },
+    "t88_d1_vh": {
+      "file": "S1A_IW_20241006T172529_DVP_RTC10_G_gpuned_90C8_VH.tif",
+      "sha256": "bf6b32024170ddb2b421dccacb5ee912d1e0b3d7fc666d8003bbc3b6fb4b8b58",
+      "src_crs": "EPSG:32631",
+      "native_median_linear": 0.017675
+    },
+    "t88_d2_vv": {
+      "file": "S1A_IW_20241018T172529_DVP_RTC10_G_gpuned_297D_VV.tif",
+      "sha256": "08fb78c3bc629b2174d2d2308740b06e990367818b8225a1154c5f1c8472fccd",
+      "src_crs": "EPSG:32631",
+      "native_median_linear": 0.084909
+    },
+    "t88_d2_vh": {
+      "file": "S1A_IW_20241018T172529_DVP_RTC10_G_gpuned_297D_VH.tif",
+      "sha256": "2c53a5bc0badf211b01773947a38c81fbfe7b7edef4a14ac4f41cfe5505d0438",
+      "src_crs": "EPSG:32631",
+      "native_median_linear": 0.019704
+    },
+    "t139_d1_vv": {
+      "file": "S1A_IW_20241010T054227_DVP_RTC10_G_gpuned_4CA5_VV.tif",
+      "sha256": "443e43fae3a4eb4f302f4d652156337c036e5d6a6332f5f28f966784b901ed00",
+      "src_crs": "EPSG:32632",
+      "native_median_linear": 0.087239
+    },
+    "t139_d1_vh": {
+      "file": "S1A_IW_20241010T054227_DVP_RTC10_G_gpuned_4CA5_VH.tif",
+      "sha256": "5b94f423a62fb46b1e91f606bd50904772fb833062ac14f3172a10542d825d3f",
+      "src_crs": "EPSG:32632",
+      "native_median_linear": 0.021554
+    },
+    "t139_d2_vv": {
+      "file": "S1A_IW_20241022T054227_DVP_RTC10_G_gpuned_566D_VV.tif",
+      "sha256": "4b7f9cd42848da9468afca9f5a1f45f30fd1059a2a7675f084207b06f84b9d30",
+      "src_crs": "EPSG:32632",
+      "native_median_linear": 0.077367
+    },
+    "t139_d2_vh": {
+      "file": "S1A_IW_20241022T054227_DVP_RTC10_G_gpuned_566D_VH.tif",
+      "sha256": "6170e061f82f0ef0cd97e39aa2d105d995898c48efcb03a9378d2801d8eef539",
+      "src_crs": "EPSG:32632",
+      "native_median_linear": 0.018349
+    }
+  },
+  "four_track_valid_px": 624938
+}

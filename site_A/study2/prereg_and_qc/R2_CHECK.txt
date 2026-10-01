@@ -1,0 +1,192 @@
+R2 CHECK: ALL PASS
+PASS  unchanged stats/HYPOTHESES.json  
+PASS  unchanged stats/T_E10_robustness.csv  
+PASS  unchanged stats/T_E11_controls.csv  
+PASS  unchanged stats/T_E1_curve.csv  
+PASS  unchanged stats/T_E1_deltaC.csv  
+PASS  unchanged stats/T_E1_perclass.csv  
+PASS  unchanged stats/T_E2w_windows.csv  
+PASS  unchanged stats/T_E3_random_draws.csv  
+PASS  unchanged stats/T_E5_two_tracks.csv  
+PASS  unchanged stats/T_E9_cross_year.csv  
+PASS  unchanged stats/T_equal_cost.csv  
+PASS  unchanged stats/T_equivalent_scenes.csv  
+PASS  unchanged stats/T_Nstar.csv  
+PASS  unchanged stats/T_saturation_fit.csv  
+PASS  unchanged figures/Fig3_budget_curve_2024.pdf  
+PASS  unchanged figures/Fig3_budget_curve_2024.png  
+PASS  unchanged figures/Fig3_budget_curve_2025.pdf  
+PASS  unchanged figures/Fig3_budget_curve_2025.png  
+PASS  unchanged figures/Fig4_coherence_gain.pdf  
+PASS  unchanged figures/Fig4_coherence_gain.png  
+PASS  unchanged figures/Fig5_perclass_gain_2024.pdf  
+PASS  unchanged figures/Fig5_perclass_gain_2024.png  
+PASS  unchanged figures/Fig5_perclass_gain_2025.pdf  
+PASS  unchanged figures/Fig5_perclass_gain_2025.png  
+PASS  unchanged figures/Fig6_date_selection.pdf  
+PASS  unchanged figures/Fig6_date_selection.png  
+PASS  unchanged figures/Fig9_cost.pdf  
+PASS  unchanged figures/Fig9_cost.png  
+PASS  unchanged manuscript/chapters/01_introduction.tex  
+PASS  unchanged manuscript/chapters/02_related_work.tex  
+PASS  unchanged manuscript/chapters/03_data.tex  
+PASS  unchanged manuscript/chapters/04_methodology.tex  
+PASS  unchanged manuscript/chapters/05_results.tex  
+PASS  unchanged manuscript/chapters/06_discussion_closing.tex  
+PASS  unchanged manuscript/main_tgrs.aux  
+PASS  unchanged manuscript/main_tgrs.bbl  
+PASS  unchanged manuscript/main_tgrs.blg  
+PASS  unchanged manuscript/main_tgrs.log  
+PASS  unchanged manuscript/main_tgrs.pdf  
+PASS  unchanged manuscript/main_tgrs.tex  
+PASS  unchanged manuscript/references.bib  
+PASS  unchanged reports/A1_PREREG.md  
+PASS  unchanged reports/A1_PREREG.sha256  
+PASS  no new files inside stats/ figures/ manuscript/  
+PASS  all pre-existing npz files present with same size  
+PASS  new npz only under experiments/E5r/  240 new npz
+PASS  REGISTRY.csv old rows byte-identical (prefix)  
+PASS  appended rows are all exp=E5r  240 appended
+PASS  E5r rows = 240  240
+PASS  no duplicate config_id  
+PASS  E5r rows per (year, M_total) = 40 (2025) / 20 (2024)  {(2024, 2): 20, (2024, 4): 20, (2024, 6): 20, (2024, 8): 20, (2025, 2): 40, (2025, 4): 40, (2025, 6): 40, (2025, 8): 40}
+PASS  E5r variant = exploratory_r2  
+PASS  E5r 120 distinct designs  120
+PASS  R2_RUN final = true  
+PASS  R2_RUN allow_missing = false  
+PASS  R2_RUN gates = G1 G2 G3 G4  ['G1', 'G2', 'G3', 'G4']
+PASS  R2_RUN missing files = 0  
+PASS  T_R2A has 28 rows  28
+PASS  dC 2025 T37 M=1 = 1.23 pp  got 1.23
+PASS  n_draws 2025 T37 M=1 = 9  got 9
+PASS  CI brackets dC 2025 T37 M=1  
+PASS  dC 2025 T37 M=2 = 1.49 pp  got 1.49
+PASS  n_draws 2025 T37 M=2 = 20  got 20
+PASS  CI brackets dC 2025 T37 M=2  
+PASS  dC 2025 T37 M=3 = 0.80 pp  got 0.8
+PASS  n_draws 2025 T37 M=3 = 20  got 20
+PASS  CI brackets dC 2025 T37 M=3  
+PASS  dC 2025 T37 M=4 = 0.68 pp  got 0.68
+PASS  n_draws 2025 T37 M=4 = 20  got 20
+PASS  CI brackets dC 2025 T37 M=4  
+PASS  dC 2025 T37 M=6 = 0.24 pp  got 0.24
+PASS  n_draws 2025 T37 M=6 = 20  got 20
+PASS  CI brackets dC 2025 T37 M=6  
+PASS  dC 2025 T37 M=8 = 0.28 pp  got 0.28
+PASS  n_draws 2025 T37 M=8 = 9  got 9
+PASS  CI brackets dC 2025 T37 M=8  
+PASS  dC 2025 T37 M=9 = 0.39 pp  got 0.39
+PASS  n_draws 2025 T37 M=9 = 1  got 1
+PASS  CI brackets dC 2025 T37 M=9  
+PASS  dC 2025 T88 M=1 = 0.90 pp  got 0.9
+PASS  n_draws 2025 T88 M=1 = 9  got 9
+PASS  CI brackets dC 2025 T88 M=1  
+PASS  dC 2025 T88 M=2 = 1.24 pp  got 1.24
+PASS  n_draws 2025 T88 M=2 = 20  got 20
+PASS  CI brackets dC 2025 T88 M=2  
+PASS  dC 2025 T88 M=3 = 0.81 pp  got 0.81
+PASS  n_draws 2025 T88 M=3 = 20  got 20
+PASS  CI brackets dC 2025 T88 M=3  
+PASS  dC 2025 T88 M=4 = 0.44 pp  got 0.44
+PASS  n_draws 2025 T88 M=4 = 20  got 20
+PASS  CI brackets dC 2025 T88 M=4  
+PASS  dC 2025 T88 M=6 = 0.20 pp  got 0.2
+PASS  n_draws 2025 T88 M=6 = 20  got 20
+PASS  CI brackets dC 2025 T88 M=6  
+PASS  dC 2025 T88 M=8 = 0.12 pp  got 0.12
+PASS  n_draws 2025 T88 M=8 = 9  got 9
+PASS  CI brackets dC 2025 T88 M=8  
+PASS  dC 2025 T88 M=9 = 0.31 pp  got 0.31
+PASS  n_draws 2025 T88 M=9 = 1  got 1
+PASS  CI brackets dC 2025 T88 M=9  
+PASS  dC 2024 T37 M=1 = 0.99 pp  got 0.99
+PASS  n_draws 2024 T37 M=1 = 9  got 9
+PASS  CI brackets dC 2024 T37 M=1  
+PASS  dC 2024 T37 M=2 = 1.67 pp  got 1.67
+PASS  n_draws 2024 T37 M=2 = 10  got 10
+PASS  CI brackets dC 2024 T37 M=2  
+PASS  dC 2024 T37 M=3 = 1.61 pp  got 1.61
+PASS  n_draws 2024 T37 M=3 = 10  got 10
+PASS  CI brackets dC 2024 T37 M=3  
+PASS  dC 2024 T37 M=4 = 1.60 pp  got 1.6
+PASS  n_draws 2024 T37 M=4 = 10  got 10
+PASS  CI brackets dC 2024 T37 M=4  
+PASS  dC 2024 T37 M=6 = 0.84 pp  got 0.84
+PASS  n_draws 2024 T37 M=6 = 10  got 10
+PASS  CI brackets dC 2024 T37 M=6  
+PASS  dC 2024 T37 M=8 = 0.47 pp  got 0.47
+PASS  n_draws 2024 T37 M=8 = 9  got 9
+PASS  CI brackets dC 2024 T37 M=8  
+PASS  dC 2024 T37 M=9 = 0.37 pp  got 0.37
+PASS  n_draws 2024 T37 M=9 = 1  got 1
+PASS  CI brackets dC 2024 T37 M=9  
+PASS  dC 2024 T88 M=1 = 0.97 pp  got 0.97
+PASS  n_draws 2024 T88 M=1 = 9  got 9
+PASS  CI brackets dC 2024 T88 M=1  
+PASS  dC 2024 T88 M=2 = 1.98 pp  got 1.98
+PASS  n_draws 2024 T88 M=2 = 10  got 10
+PASS  CI brackets dC 2024 T88 M=2  
+PASS  dC 2024 T88 M=3 = 1.13 pp  got 1.13
+PASS  n_draws 2024 T88 M=3 = 10  got 10
+PASS  CI brackets dC 2024 T88 M=3  
+PASS  dC 2024 T88 M=4 = 1.18 pp  got 1.18
+PASS  n_draws 2024 T88 M=4 = 10  got 10
+PASS  CI brackets dC 2024 T88 M=4  
+PASS  dC 2024 T88 M=6 = 0.64 pp  got 0.64
+PASS  n_draws 2024 T88 M=6 = 10  got 10
+PASS  CI brackets dC 2024 T88 M=6  
+PASS  dC 2024 T88 M=8 = 0.48 pp  got 0.48
+PASS  n_draws 2024 T88 M=8 = 9  got 9
+PASS  CI brackets dC 2024 T88 M=8  
+PASS  dC 2024 T88 M=9 = 0.39 pp  got 0.39
+PASS  n_draws 2024 T88 M=9 = 1  got 1
+PASS  CI brackets dC 2024 T88 M=9  
+PASS  BA_O2 2025 T37 M=1 = 45.78 %  got 45.78
+PASS  BA_O2 2025 T37 M=2 = 63.03 %  got 63.03
+PASS  BA_O2 2025 T37 M=3 = 73.21 %  got 73.21
+PASS  BA_O2 2025 T37 M=4 = 77.58 %  got 77.58
+PASS  BA_O2 2025 T37 M=6 = 82.32 %  got 82.32
+PASS  BA_O2 2025 T37 M=8 = 83.86 %  got 83.86
+PASS  BA_O2 2025 T88 M=1 = 45.86 %  got 45.86
+PASS  BA_O2 2025 T88 M=2 = 62.26 %  got 62.26
+PASS  BA_O2 2025 T88 M=3 = 71.01 %  got 71.01
+PASS  BA_O2 2025 T88 M=4 = 77.91 %  got 77.91
+PASS  BA_O2 2025 T88 M=6 = 82.04 %  got 82.04
+PASS  BA_O2 2025 T88 M=8 = 83.87 %  got 83.87
+PASS  BA_O2 2024 T37 M=1 = 38.28 %  got 38.28
+PASS  BA_O2 2024 T37 M=2 = 51.85 %  got 51.85
+PASS  BA_O2 2024 T37 M=3 = 63.08 %  got 63.08
+PASS  BA_O2 2024 T37 M=4 = 65.23 %  got 65.23
+PASS  BA_O2 2024 T37 M=6 = 72.65 %  got 72.65
+PASS  BA_O2 2024 T37 M=8 = 75.62 %  got 75.62
+PASS  BA_O2 2024 T88 M=1 = 36.65 %  got 36.65
+PASS  BA_O2 2024 T88 M=2 = 49.44 %  got 49.44
+PASS  BA_O2 2024 T88 M=3 = 60.85 %  got 60.85
+PASS  BA_O2 2024 T88 M=4 = 65.60 %  got 65.6
+PASS  BA_O2 2024 T88 M=6 = 70.05 %  got 70.05
+PASS  BA_O2 2024 T88 M=8 = 73.31 %  got 73.31
+PASS  T_R2D has 12 rows  12
+PASS  equal-cost 2025 T37 O3 M=2 = -8.69 pp  got -8.69
+PASS  equal-cost 2025 T37 O3 M=4 = -4.05 pp  got -4.05
+PASS  equal-cost 2025 T37 O3 M=6 = -1.79 pp  got -1.79
+PASS  equal-cost 2025 T88 O3 M=2 = -7.51 pp  got -7.51
+PASS  equal-cost 2025 T88 O3 M=4 = -3.68 pp  got -3.68
+PASS  equal-cost 2025 T88 O3 M=6 = -2.24 pp  got -2.24
+PASS  equal-cost 2024 T37 O3 M=2 = -9.57 pp  got -9.57
+PASS  equal-cost 2024 T37 O3 M=4 = -5.81 pp  got -5.81
+PASS  equal-cost 2024 T37 O3 M=6 = -3.18 pp  got -3.18
+PASS  equal-cost 2024 T88 O3 M=2 = -9.43 pp  got -9.43
+PASS  equal-cost 2024 T88 O3 M=4 = -3.28 pp  got -3.28
+PASS  equal-cost 2024 T88 O3 M=6 = -3.49 pp  got -3.49
+PASS  no 'p < 0.0001' in any R2 table  
+PASS  no 'p < 1e-04' in any R2 table  
+PASS  T_R2E has 16 rows (2 years x 4 M_total x 2 obs)  16
+PASS  H5_R2 overall status present  NOT_EVALUABLE
+PASS  figure FigR2_1_budget_curves.pdf exists  
+PASS  figure FigR2_1_budget_curves.png exists  
+PASS  figure FigR2_2_coherence_gain.pdf exists  
+PASS  figure FigR2_2_coherence_gain.png exists  
+PASS  figure FigR2_3_equal_cost.pdf exists  
+PASS  figure FigR2_3_equal_cost.png exists  
+PASS  figure FigR2_4_two_tracks.pdf exists  
+PASS  figure FigR2_4_two_tracks.png exists  

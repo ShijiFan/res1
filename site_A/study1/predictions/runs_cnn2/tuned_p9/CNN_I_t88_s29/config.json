@@ -1,0 +1,1 @@
+{"arm": "CNN_I", "src": "t88", "seed": 29, "patch": 9, "buffer_m": 400.0, "lr": 0.001, "epochs": 30, "wd": 0.001, "seconds": 29.7}

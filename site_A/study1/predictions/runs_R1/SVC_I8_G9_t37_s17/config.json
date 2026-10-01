@@ -1,0 +1,39 @@
+{
+  "learner": "SVC",
+  "representation": "I8_G9",
+  "source_track": "t37",
+  "seed": 17,
+  "selected_params": {
+    "C": 10.0,
+    "gamma_mult": 0.1
+  },
+  "train_pixel_count": 20000,
+  "train_pixels_sha256": "db5c5a134e3fdecdc5232371ea26b386074a3d4682d75df46208b6a6c7ae5ca7",
+  "eval_blocks": [
+    205,
+    206,
+    305,
+    307,
+    406,
+    505,
+    603,
+    605,
+    702,
+    707,
+    803,
+    806
+  ],
+  "eval_pixel_count": 9600,
+  "feature_dim": 9,
+  "feature_names": [
+    "vvm",
+    "vhm",
+    "rtm",
+    "vvd",
+    "vhd",
+    "rtd",
+    "lstd_vvm_3",
+    "lstd_vhm_3",
+    "g12_raw"
+  ]
+}

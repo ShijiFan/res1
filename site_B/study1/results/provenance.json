@@ -1,0 +1,25 @@
+{
+  "cube_sha256": "3f84fe8ac4b19d624b40dd784c8ba546b5e9a4246494210822bd6ea44f2a4b14",
+  "labels_sha256": "a774d5118fa1a28255fab6a77a14e70735ed7b09217d52547677fefb40f13be8",
+  "c2_pixels": 505806,
+  "eval_blocks": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    102,
+    105,
+    106,
+    200,
+    202,
+    204,
+    303,
+    304,
+    500,
+    601,
+    606,
+    701
+  ],
+  "r1_source_sha256": "b423a3eca910d86ddc7e69f4a3bf5a40a76aa6a92f5d248b3f095fd308ac4d5e"
+}

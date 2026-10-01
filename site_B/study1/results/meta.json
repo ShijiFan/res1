@@ -1,0 +1,94 @@
+{
+  "grid": {
+    "crs": "EPSG:32632",
+    "pixel_m": 40,
+    "width": 871,
+    "height": 999,
+    "affine_gdal": [
+      334640.0,
+      40.0,
+      0.0,
+      5886200.0,
+      0.0,
+      -40.0
+    ],
+    "origin_rule": "project AOI EPSG:4326 -> EPSG:32632; left=floor(minx/40)*40; top=ceil(maxy/40)*40",
+    "pixel_purity_rule": "rasterize negative sqrt(2)*20 m polygon buffer at pixel centers; remove multi-parcel conflicts",
+    "aoi_pixel_rule": "same negative buffer for AOI boundary",
+    "grid_status": "PREDECLARED_COMMON_GRID; SAR product alignment pending",
+    "created_utc": "2026-09-30T16:33:21+00:00"
+  },
+  "spring": {
+    "t15": {
+      "pair": "2024-05-10/2024-05-22",
+      "valid_px": 870122,
+      "theta_mean": 35.856,
+      "g12_mean": 0.4589,
+      "vv_median_db": -10.96
+    },
+    "t37": {
+      "pair": "2024-05-12/2024-05-24",
+      "valid_px": 870126,
+      "theta_mean": 36.196,
+      "g12_mean": 0.4537,
+      "vv_median_db": -11.52
+    },
+    "t88": {
+      "pair": "2024-05-15/2024-05-27",
+      "valid_px": 870101,
+      "theta_mean": 43.815,
+      "g12_mean": 0.4288,
+      "vv_median_db": -11.6
+    },
+    "t139": {
+      "pair": "2024-05-07/2024-05-19",
+      "valid_px": 870120,
+      "theta_mean": 44.098,
+      "g12_mean": 0.4321,
+      "vv_median_db": -10.71
+    }
+  },
+  "autumn": {
+    "t15": {
+      "pair": "2024-10-01/2024-10-13",
+      "valid_px": 870112,
+      "theta_mean": 35.862,
+      "g12_mean": 0.4728,
+      "vv_median_db": -7.65
+    },
+    "t37": {
+      "pair": "2024-10-03/2024-10-15",
+      "valid_px": 870125,
+      "theta_mean": 36.211,
+      "g12_mean": 0.5448,
+      "vv_median_db": -8.51
+    },
+    "t88": {
+      "pair": "2024-10-06/2024-10-18",
+      "valid_px": 870111,
+      "theta_mean": 43.838,
+      "g12_mean": 0.5336,
+      "vv_median_db": -9.67
+    },
+    "t139": {
+      "pair": "2024-10-10/2024-10-22",
+      "valid_px": 870119,
+      "theta_mean": 44.114,
+      "g12_mean": 0.4743,
+      "vv_median_db": -8.83
+    }
+  },
+  "four_track_valid_spring": 870085,
+  "four_track_valid_autumn": 870080,
+  "mmu_valid": 843251,
+  "omega": 843251,
+  "c2_consensus": 505806,
+  "c2_per_class": [
+    89194,
+    34335,
+    354359,
+    26176,
+    1742
+  ],
+  "wc_clc_agreement_on_omega": 0.627
+}
