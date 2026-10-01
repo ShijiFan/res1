@@ -4,7 +4,7 @@ Code, frozen protocols, result tables and predictions for the manuscript
 
 > S. Fan, D. Albuquerque, P. Pinho, and M. Shen, "When Does Repeat-Pass Coherence Add Information?
 > Sentinel-1 Land-Cover and Crop Mapping Across Acquisition Budgets, Class Definitions, and Spatial
-> Context," submitted to *IEEE Transactions on Geoscience and Remote Sensing*.
+> Context," manuscript prepared for *IEEE Transactions on Geoscience and Remote Sensing*.
 
 The paper measures the marginal value of Sentinel-1 12-day VV coherence over backscatter from the same
 acquisitions at two Dutch sites:

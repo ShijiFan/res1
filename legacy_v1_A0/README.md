@@ -1,13 +1,12 @@
 # Cross-Track Sentinel-1 Land-Cover Classification with Two-Acquisition Interferometric Coherence
 
-[![Paper](https://img.shields.io/badge/IEEE_TGRS-Under_Review-blue.svg)](https://github.com/ShijiFan/res1)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-brightgreen.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Reproducibility](https://img.shields.io/badge/Results-100%25_Verified-success.svg)](scripts/reproduce_all_tables.py)
 
 Official open-source repository and reproducibility package for the paper:  
 **"Cross-Track Sentinel-1 Land-Cover Classification with Two-Acquisition Interferometric Coherence"**  
-Submitted to *IEEE Transactions on Geoscience and Remote Sensing (TGRS)*.
+Superseded draft; never submitted.
 
 ---
 
