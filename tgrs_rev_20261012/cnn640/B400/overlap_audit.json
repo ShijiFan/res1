@@ -1,0 +1,177 @@
+[
+  {
+    "seed": 17,
+    "patch": 1,
+    "eval_centers_with_shared_input": 0,
+    "eval_centers": 79436,
+    "train_candidates": 148703
+  },
+  {
+    "seed": 17,
+    "patch": 3,
+    "eval_centers_with_shared_input": 0,
+    "eval_centers": 79436,
+    "train_candidates": 148703
+  },
+  {
+    "seed": 17,
+    "patch": 5,
+    "eval_centers_with_shared_input": 0,
+    "eval_centers": 79436,
+    "train_candidates": 148703
+  },
+  {
+    "seed": 17,
+    "patch": 9,
+    "eval_centers_with_shared_input": 59,
+    "eval_centers": 79436,
+    "train_candidates": 148703
+  },
+  {
+    "seed": 17,
+    "patch": 11,
+    "eval_centers_with_shared_input": 1789,
+    "eval_centers": 79436,
+    "train_candidates": 148703
+  },
+  {
+    "seed": 29,
+    "patch": 1,
+    "eval_centers_with_shared_input": 0,
+    "eval_centers": 79436,
+    "train_candidates": 148703
+  },
+  {
+    "seed": 29,
+    "patch": 3,
+    "eval_centers_with_shared_input": 0,
+    "eval_centers": 79436,
+    "train_candidates": 148703
+  },
+  {
+    "seed": 29,
+    "patch": 5,
+    "eval_centers_with_shared_input": 0,
+    "eval_centers": 79436,
+    "train_candidates": 148703
+  },
+  {
+    "seed": 29,
+    "patch": 9,
+    "eval_centers_with_shared_input": 42,
+    "eval_centers": 79436,
+    "train_candidates": 148703
+  },
+  {
+    "seed": 29,
+    "patch": 11,
+    "eval_centers_with_shared_input": 1579,
+    "eval_centers": 79436,
+    "train_candidates": 148703
+  },
+  {
+    "seed": 43,
+    "patch": 1,
+    "eval_centers_with_shared_input": 0,
+    "eval_centers": 79436,
+    "train_candidates": 148703
+  },
+  {
+    "seed": 43,
+    "patch": 3,
+    "eval_centers_with_shared_input": 0,
+    "eval_centers": 79436,
+    "train_candidates": 148703
+  },
+  {
+    "seed": 43,
+    "patch": 5,
+    "eval_centers_with_shared_input": 0,
+    "eval_centers": 79436,
+    "train_candidates": 148703
+  },
+  {
+    "seed": 43,
+    "patch": 9,
+    "eval_centers_with_shared_input": 27,
+    "eval_centers": 79436,
+    "train_candidates": 148703
+  },
+  {
+    "seed": 43,
+    "patch": 11,
+    "eval_centers_with_shared_input": 1692,
+    "eval_centers": 79436,
+    "train_candidates": 148703
+  },
+  {
+    "seed": 53,
+    "patch": 1,
+    "eval_centers_with_shared_input": 0,
+    "eval_centers": 79436,
+    "train_candidates": 148703
+  },
+  {
+    "seed": 53,
+    "patch": 3,
+    "eval_centers_with_shared_input": 0,
+    "eval_centers": 79436,
+    "train_candidates": 148703
+  },
+  {
+    "seed": 53,
+    "patch": 5,
+    "eval_centers_with_shared_input": 0,
+    "eval_centers": 79436,
+    "train_candidates": 148703
+  },
+  {
+    "seed": 53,
+    "patch": 9,
+    "eval_centers_with_shared_input": 51,
+    "eval_centers": 79436,
+    "train_candidates": 148703
+  },
+  {
+    "seed": 53,
+    "patch": 11,
+    "eval_centers_with_shared_input": 1661,
+    "eval_centers": 79436,
+    "train_candidates": 148703
+  },
+  {
+    "seed": 71,
+    "patch": 1,
+    "eval_centers_with_shared_input": 0,
+    "eval_centers": 79436,
+    "train_candidates": 148703
+  },
+  {
+    "seed": 71,
+    "patch": 3,
+    "eval_centers_with_shared_input": 0,
+    "eval_centers": 79436,
+    "train_candidates": 148703
+  },
+  {
+    "seed": 71,
+    "patch": 5,
+    "eval_centers_with_shared_input": 0,
+    "eval_centers": 79436,
+    "train_candidates": 148703
+  },
+  {
+    "seed": 71,
+    "patch": 9,
+    "eval_centers_with_shared_input": 31,
+    "eval_centers": 79436,
+    "train_candidates": 148703
+  },
+  {
+    "seed": 71,
+    "patch": 11,
+    "eval_centers_with_shared_input": 1570,
+    "eval_centers": 79436,
+    "train_candidates": 148703
+  }
+]

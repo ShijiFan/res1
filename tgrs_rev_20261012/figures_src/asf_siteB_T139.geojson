@@ -1,0 +1,64 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "coordinates": [
+                    [
+                        [
+                            9.887673,
+                            51.910412
+                        ],
+                        [
+                            10.441928,
+                            53.527275
+                        ],
+                        [
+                            6.544395,
+                            53.938488
+                        ],
+                        [
+                            6.135556,
+                            52.318153
+                        ],
+                        [
+                            9.887673,
+                            51.910412
+                        ]
+                    ]
+                ],
+                "type": "Polygon"
+            },
+            "properties": {
+                "centerLat": 52.9391,
+                "centerLon": 8.2594,
+                "stopTime": "2024-05-07T05:42:30Z",
+                "fileID": "S1A_IW_SLC__1SDV_20240507T054203_20240507T054230_053761_06884C_529A-SLC",
+                "flightDirection": "DESCENDING",
+                "pathNumber": 139,
+                "processingLevel": "SLC",
+                "url": "https://datapool.asf.alaska.edu/SLC/SA/S1A_IW_SLC__1SDV_20240507T054203_20240507T054230_053761_06884C_529A.zip",
+                "startTime": "2024-05-07T05:42:03Z",
+                "sceneName": "S1A_IW_SLC__1SDV_20240507T054203_20240507T054230_053761_06884C_529A",
+                "browse": null,
+                "platform": "Sentinel-1A",
+                "bytes": 8246683198,
+                "md5sum": "5cd402c889f05dd3dc4b08d3715d1328",
+                "frameNumber": 416,
+                "granuleType": "SENTINEL_1A_FRAME",
+                "orbit": 53761,
+                "polarization": "VV+VH",
+                "processingDate": "2024-05-07T05:42:03Z",
+                "sensor": "C-SAR",
+                "groupID": "S1A_IWDV_0415_0422_053761_139",
+                "pgeVersion": "003.71",
+                "fileName": "S1A_IW_SLC__1SDV_20240507T054203_20240507T054230_053761_06884C_529A.zip",
+                "beamModeType": "IW",
+                "s3Urls": [
+                    "s3://asf-ngap2w-p-s1-slc-7b420b89/S1A_IW_SLC__1SDV_20240507T054203_20240507T054230_053761_06884C_529A.zip"
+                ]
+            }
+        }
+    ]
+}

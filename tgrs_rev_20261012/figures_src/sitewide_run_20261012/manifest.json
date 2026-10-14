@@ -1,0 +1,137 @@
+{
+  "generated_utc": "2026-10-12T00:39:14.736871+00:00",
+  "script_sha256": "ea5c0bd50cb35b42f4e670567c5d8379b2831f98fad10a3dd7e5e20d582f3333",
+  "selection_rule": "RF, source T15, target T37, seed 17; all evaluation blocks; fixed before inference",
+  "inputs_sha256": {
+    "E:\\research\\SAR\\res1_clean\\src\\run_R1_buffered_cv_retrain.py": "b423a3eca910d86ddc7e69f4a3bf5a40a76aa6a92f5d248b3f095fd308ac4d5e",
+    "E:\\research\\SAR\\A0_gamma0_rerun_20260929\\data\\cube_4track_v7.npz": "06d26adeb00471e6031aee4648b73af97913dd8aa38c4cec415b3869e2525af9",
+    "E:\\research\\SAR\\sar_v2\\data\\flevoland_datacube_v4_multibaseline.npz": "10a057e034840aca1217ce5082011c775f7462e7a75feb839b292aa56f81d424",
+    "E:\\research\\SAR\\sar_v2\\labels\\consensus_mask.npz": "ceff2533bdfe1bb40b0dcda891eed299b7ff28b692f4b70391012a1c825f9c46",
+    "E:\\research\\SAR\\sar_v2\\mmu\\mmu_mask.npz": "9b430968ab48e7ddff679811a70cc149d6f6e7e9ac05e82f9e592ea3950e941d",
+    "E:\\research\\SAR\\revision_experiments_20260914\\omega_v6_rebuilt.npy": "37606a3a1becfda4508fa68abbd5b5b6bf7ee0274f6f51f29435b9c748917fc8",
+    "E:\\research\\SAR\\A0_gamma0_rerun_20260929\\ws\\splits\\split_manifest.json": "d6cfc733086bcd970592f7837f6005d0523dbd940c4b57d73f57764a0ae5250b",
+    "E:\\research\\SAR\\A0_gamma0_rerun_20260929\\ws\\runs_R1\\RF_I28_t15_s17\\config.json": "f32f57e061e30f2d19d3a991164c4deae376e1aef9da90eb2bfcf8dba3abbfaf",
+    "E:\\research\\SAR\\A0_gamma0_rerun_20260929\\ws\\runs_R1\\RF_I28_t15_s17\\model.joblib": "c403127af0da37936a162ed742ab99728126a4ed28bb9a4e908382ca11bc0520",
+    "E:\\research\\SAR\\A0_gamma0_rerun_20260929\\ws\\runs_R1\\RF_I28_t15_s17\\predictions.parquet": "89bfa1bf20af272c38bec2613486df9252cf556d3a230f887094a2b5d0d2c815",
+    "E:\\research\\SAR\\A0_gamma0_rerun_20260929\\ws\\runs_R1\\RF_I28_G29_t15_s17\\config.json": "871dd041cca27dbf398a9bf4d89ca47b29cf4d76e2dbfe2911dfe97ab19f8a54",
+    "E:\\research\\SAR\\A0_gamma0_rerun_20260929\\ws\\runs_R1\\RF_I28_G29_t15_s17\\model.joblib": "060df89284faf8a0c8cde22944618652e2d1ba893826bcfb1692f6cf32cf796d",
+    "E:\\research\\SAR\\A0_gamma0_rerun_20260929\\ws\\runs_R1\\RF_I28_G29_t15_s17\\predictions.parquet": "bb651586062cf4311750a1a5eab6941dcd8f5d2e76e4f532ecaa219d2609de76",
+    "E:\\research\\SAR\\site2_20260930\\runs\\STUDY1\\cube_spring.npz": "3f84fe8ac4b19d624b40dd784c8ba546b5e9a4246494210822bd6ea44f2a4b14",
+    "E:\\research\\SAR\\site2_20260930\\runs\\STUDY1\\labels.npz": "a774d5118fa1a28255fab6a77a14e70735ed7b09217d52547677fefb40f13be8",
+    "E:\\research\\SAR\\site2_20260930\\runs\\STUDY1\\ws\\splits\\split_manifest.json": "b8b7c28595574a3a8931bbd545aa96f5567848d7d9104def97879bfdfa632ab0",
+    "E:\\research\\SAR\\site2_20260930\\runs\\STUDY1\\ws\\runs_R1\\RF_I28_t15_s17\\config.json": "236c964032c83388b4da7093721311f89b3b6cb245ecb4bc2e46f5c5fd07fd12",
+    "E:\\research\\SAR\\site2_20260930\\runs\\STUDY1\\ws\\runs_R1\\RF_I28_t15_s17\\model.joblib": "a6b5c7a9008956e5ca371430ac8a5c9fc01c0eb5e042d10718a3a906817727f8",
+    "E:\\research\\SAR\\site2_20260930\\runs\\STUDY1\\ws\\runs_R1\\RF_I28_t15_s17\\predictions.parquet": "1f1b87ec41f5840361582ffe212c4de88e19813502f36ee362147bed96531bb9",
+    "E:\\research\\SAR\\site2_20260930\\runs\\STUDY1\\ws\\runs_R1\\RF_I28_G29_t15_s17\\config.json": "790752de3d321cb761f34f91b7177e6cc36a958d5ff9a3f7a9f696baea8598f2",
+    "E:\\research\\SAR\\site2_20260930\\runs\\STUDY1\\ws\\runs_R1\\RF_I28_G29_t15_s17\\model.joblib": "e047857f973916ce050a22ce86ad6792b0ec0df3f963fd3ba01d6180e8420d5c",
+    "E:\\research\\SAR\\site2_20260930\\runs\\STUDY1\\ws\\runs_R1\\RF_I28_G29_t15_s17\\predictions.parquet": "19bf0c33e06fc75650f10bc0e10e2474abf87f74c36432b2c54a2c9f3993a452"
+  },
+  "outputs_sha256": {
+    "E:\\research\\SAR\\tgrs_figrev_20261012\\manuscript\\figures\\fig_sitewide_map.pdf": "2593ed62d81630d63992cfe86dc3923e3c7168c068c4621ece754f50bc9f150d",
+    "E:\\research\\SAR\\tgrs_figrev_20261012\\manuscript\\figures\\fig_sitewide_map.png": "6a7d2758f1e4a2a97c7aa5110bfe2d8fcdd3b9462e14905c884a91cb698c8bba",
+    "E:\\research\\SAR\\tgrs_figrev_20261012\\figures_src\\sitewide_run_20261012\\Site_A_maps.npz": "5a8714c5dfc900b1dadced29b9b12deb3636fd3ba8b4f715357294d8218e88c0",
+    "E:\\research\\SAR\\tgrs_figrev_20261012\\figures_src\\sitewide_run_20261012\\Site_B_maps.npz": "1ec0b15ae88f4ec9d41c1ea5eefa9127b38edad0a0023b13789d49aa25609d97"
+  },
+  "metrics": {
+    "Site A": {
+      "eval_blocks": 12,
+      "omega_pixels_predicted": 160618,
+      "c2_pixels_evaluated": 79436,
+      "c2_builtup_pixels": 1358,
+      "builtup_correct_I28": 953,
+      "builtup_correct_I28_G29": 1230,
+      "oa_I28": 0.7525555163905534,
+      "oa_I28_G29": 0.7639861020192356,
+      "corrected": 2344,
+      "lost": 1436,
+      "c2_by_class": [
+        14919,
+        48213,
+        14460,
+        1358,
+        486
+      ],
+      "corrected_by_true_class": [
+        512,
+        1070,
+        438,
+        302,
+        22
+      ],
+      "lost_by_true_class": [
+        217,
+        763,
+        431,
+        25,
+        0
+      ],
+      "class_order": [
+        "Forest",
+        "Grassland",
+        "Cropland",
+        "Built-up",
+        "Water"
+      ],
+      "parity": {
+        "I28": {
+          "checked_rows": 9600,
+          "exact": true
+        },
+        "I28_G29": {
+          "checked_rows": 9600,
+          "exact": true
+        }
+      }
+    },
+    "Site B": {
+      "eval_blocks": 17,
+      "omega_pixels_predicted": 255544,
+      "c2_pixels_evaluated": 154769,
+      "c2_builtup_pixels": 9704,
+      "builtup_correct_I28": 5772,
+      "builtup_correct_I28_G29": 8248,
+      "oa_I28": 0.8892090793375934,
+      "oa_I28_G29": 0.9071519490337212,
+      "corrected": 4187,
+      "lost": 1410,
+      "c2_by_class": [
+        22956,
+        8554,
+        113212,
+        9704,
+        343
+      ],
+      "corrected_by_true_class": [
+        614,
+        179,
+        796,
+        2594,
+        4
+      ],
+      "lost_by_true_class": [
+        405,
+        252,
+        631,
+        118,
+        4
+      ],
+      "class_order": [
+        "Forest",
+        "Grassland",
+        "Cropland",
+        "Built-up",
+        "Water"
+      ],
+      "parity": {
+        "I28": {
+          "checked_rows": 13600,
+          "exact": true
+        },
+        "I28_G29": {
+          "checked_rows": 13600,
+          "exact": true
+        }
+      }
+    }
+  }
+}

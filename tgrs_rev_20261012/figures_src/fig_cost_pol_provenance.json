@@ -1,0 +1,9 @@
+{
+  "utc": "2026-10-12T13:05:19.996801+00:00",
+  "script": "E:\\research\\SAR\\tgrs_figrev_20261012\\figures_src\\make_fig_cost_pol.py",
+  "input_sha256": {
+    "E:\\research\\SAR\\merged_tgrs_20260930\\plan\\substantive_20261002\\statistics\\price_thresholds.csv": "b4aa2ad468c3a7f839b33e666c5f1e95f0d143b77726b2050464970d04cf5fe1",
+    "E:\\research\\SAR\\A1_observation_budget_20260923\\runs\\20260924_A1_MAIN\\stats\\T_E1_deltaC.csv": "211f549e1b637b75ad4b3ddca870d00d2aceafc21e16e882151f895ed95e89d9",
+    "E:\\research\\SAR\\site2_20260930\\runs\\MAIN\\stats\\T_E1_deltaC.csv": "1da59cd8fa1876617c1edbdfc7d5e0db88519ee5d7f85f3538020442db854bb0"
+  }
+}

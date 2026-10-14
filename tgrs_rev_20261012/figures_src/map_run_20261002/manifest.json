@@ -1,0 +1,130 @@
+{
+  "generated_utc": "2026-10-12T00:45:57.601111+00:00",
+  "script_sha256": "afc76caef585ca49a6ac1deca4346a6dd83aa5b63844ba637f00ba0cbd950f49",
+  "inputs_sha256": {
+    "E:\\research\\SAR\\A0_gamma0_rerun_20260929\\data\\cube_4track_v7.npz": "06d26adeb00471e6031aee4648b73af97913dd8aa38c4cec415b3869e2525af9",
+    "E:\\research\\SAR\\SAR_v2\\mmu\\mmu_mask.npz": "9b430968ab48e7ddff679811a70cc149d6f6e7e9ac05e82f9e592ea3950e941d",
+    "E:\\research\\SAR\\SAR_v2\\labels\\consensus_mask.npz": "ceff2533bdfe1bb40b0dcda891eed299b7ff28b692f4b70391012a1c825f9c46",
+    "E:\\research\\SAR\\revision_experiments_20260914\\omega_v6_rebuilt.npy": "37606a3a1becfda4508fa68abbd5b5b6bf7ee0274f6f51f29435b9c748917fc8",
+    "E:\\research\\SAR\\A0_gamma0_rerun_20260929\\ws\\splits\\split_manifest.json": "d6cfc733086bcd970592f7837f6005d0523dbd940c4b57d73f57764a0ae5250b",
+    "E:\\research\\SAR\\res1_clean\\src\\run_R1_buffered_cv_retrain.py": "b423a3eca910d86ddc7e69f4a3bf5a40a76aa6a92f5d248b3f095fd308ac4d5e",
+    "E:\\research\\SAR\\A0_gamma0_rerun_20260929\\ws\\runs_R1\\RF_I28_t15_s17\\config.json": "f32f57e061e30f2d19d3a991164c4deae376e1aef9da90eb2bfcf8dba3abbfaf",
+    "E:\\research\\SAR\\A0_gamma0_rerun_20260929\\ws\\runs_R1\\RF_I28_t15_s17\\model.joblib": "c403127af0da37936a162ed742ab99728126a4ed28bb9a4e908382ca11bc0520",
+    "E:\\research\\SAR\\A0_gamma0_rerun_20260929\\ws\\runs_R1\\RF_I28_t15_s17\\predictions.parquet": "89bfa1bf20af272c38bec2613486df9252cf556d3a230f887094a2b5d0d2c815",
+    "E:\\research\\SAR\\A0_gamma0_rerun_20260929\\ws\\runs_R1\\RF_I28_G29_t15_s17\\config.json": "871dd041cca27dbf398a9bf4d89ca47b29cf4d76e2dbfe2911dfe97ab19f8a54",
+    "E:\\research\\SAR\\A0_gamma0_rerun_20260929\\ws\\runs_R1\\RF_I28_G29_t15_s17\\model.joblib": "060df89284faf8a0c8cde22944618652e2d1ba893826bcfb1692f6cf32cf796d",
+    "E:\\research\\SAR\\A0_gamma0_rerun_20260929\\ws\\runs_R1\\RF_I28_G29_t15_s17\\predictions.parquet": "bb651586062cf4311750a1a5eab6941dcd8f5d2e76e4f532ecaa219d2609de76"
+  },
+  "outputs_sha256": {
+    "E:\\research\\SAR\\tgrs_figrev_20261012\\figures_src\\map_run_20261002\\I28_target_t37_block_205.npy": "9bd48cad767daf4e607478f68f5a6f21da580d02453fe4bef543ff135ad860b2",
+    "E:\\research\\SAR\\tgrs_figrev_20261012\\figures_src\\map_run_20261002\\I28_G29_target_t37_block_205.npy": "b6b562751072bccff2a07eb41ebc5669906675f95f98bd52417aa12ddc927009",
+    "E:\\research\\SAR\\tgrs_figrev_20261012\\figures_src\\map_run_20261002\\reference_and_masks.npz": "687272c8b064c6978d2273af7e343149a0236feaf8e58fc810368d8603d4e343",
+    "E:\\research\\SAR\\tgrs_figrev_20261012\\manuscript\\figures\\fig_holdout_map.pdf": "ab83300111424f1e84c64c0a4102847257076d3077730ae531da2da07fc91981",
+    "E:\\research\\SAR\\tgrs_figrev_20261012\\manuscript\\figures\\fig_holdout_map.svg": "6975d116396b19a7817211ba9588080b69235a3901aa901b707af8903f36446f",
+    "E:\\research\\SAR\\tgrs_figrev_20261012\\manuscript\\figures\\fig_holdout_map.png": "0bbb070e2c7374a2e1ee83a7c25d39b5a31d55344cdb4bc0b6a22038993bae02"
+  },
+  "metrics": {
+    "block": 205,
+    "source_track": "t15",
+    "target_track": "t37",
+    "seed": 17,
+    "n_omega": 15032,
+    "n_c2": 8162,
+    "n_c2_by_class": [
+      2,
+      7282,
+      335,
+      543,
+      0
+    ],
+    "oa_i28": 0.7926978681695663,
+    "oa_i28_g29": 0.810340602793433,
+    "built_up_correct_i28": 396,
+    "built_up_correct_i28_g29": 494,
+    "confusion_i28": [
+      [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        154,
+        5936,
+        1070,
+        122,
+        0
+      ],
+      [
+        13,
+        181,
+        137,
+        4,
+        0
+      ],
+      [
+        82,
+        39,
+        26,
+        396,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "confusion_i28_g29": [
+      [
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        173,
+        5987,
+        1044,
+        78,
+        0
+      ],
+      [
+        15,
+        185,
+        133,
+        2,
+        0
+      ],
+      [
+        5,
+        31,
+        13,
+        494,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "parity": {
+      "I28": {
+        "checked_rows": 800,
+        "exact": true
+      },
+      "I28_G29": {
+        "checked_rows": 800,
+        "exact": true
+      }
+    }
+  },
+  "selection_rule": "Predeclared Site A evaluation block 205, RF source T15 target T37 seed 17"
+}

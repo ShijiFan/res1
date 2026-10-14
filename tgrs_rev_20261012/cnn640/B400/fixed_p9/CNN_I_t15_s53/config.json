@@ -1,0 +1,13 @@
+{
+  "patch": 9,
+  "arm": "CNN_I",
+  "source": "t15",
+  "seed": 53,
+  "lr": 0.001,
+  "epochs": 30,
+  "wd": 0.0001,
+  "batch": 256,
+  "buffer_m": 400.0,
+  "n_train": 20000,
+  "seconds": 70.85538291931152
+}

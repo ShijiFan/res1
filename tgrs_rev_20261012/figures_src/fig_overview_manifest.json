@@ -1,0 +1,39 @@
+{
+  "generated_utc": "2026-10-12T00:39:50.023686+00:00",
+  "script_sha256": "0389457a111295fcba9f3deb15b2dc7c66326cffa70094b8d9954c7f3dc1f7be",
+  "inputs_sha256": {
+    "E:\\research\\SAR\\A0_gamma0_rerun_20260929\\data\\cube_4track_v7.npz": "06d26adeb00471e6031aee4648b73af97913dd8aa38c4cec415b3869e2525af9",
+    "E:\\research\\SAR\\site2_20260930\\runs\\STUDY1\\cube_spring.npz": "3f84fe8ac4b19d624b40dd784c8ba546b5e9a4246494210822bd6ea44f2a4b14",
+    "E:\\research\\SAR\\site2_20260930\\runs\\STUDY1\\meta.json": "45ffb5c63b28724040d3f0b5b48a3fe52f85a03b53b4f3cce95f72397c387dc8",
+    "E:\\research\\SAR\\A0_gamma0_rerun_20260929\\ws\\splits\\split_manifest.json": "d6cfc733086bcd970592f7837f6005d0523dbd940c4b57d73f57764a0ae5250b",
+    "E:\\research\\SAR\\site2_20260930\\runs\\STUDY1\\split_manifest.json": "b8b7c28595574a3a8931bbd545aa96f5567848d7d9104def97879bfdfa632ab0",
+    "E:\\research\\SAR\\sar_v2\\data\\products\\S1AA_20240510T171724_20240522T171723_VVP012_INT40_G_ueF_717E\\S1AA_20240510T171724_20240522T171723_VVP012_INT40_G_ueF_717E_inc_map_ell.tif": "dca6c2883172e753814759a9e9c4f5de4d2389fede484b3952fba48323e75cc4",
+    "E:\\research\\SAR\\merged_tgrs_20260930\\figures_src\\ne\\ne_10m_admin_0_countries.zip": "ce1ac7036499a0edd641fbc093cd209a98f96a49d2eca8480aaacad35138a7f6",
+    "E:\\research\\SAR\\tgrs_figrev_20261012\\figures_src\\asf_siteA_T139.geojson": "f22d85c811153e997c930cd77722dad0fad2ce610a83ddd742b6a42d66294a01",
+    "E:\\research\\SAR\\tgrs_figrev_20261012\\figures_src\\asf_siteA_T15.geojson": "76f2ae0b0fbc9c3c6273f63dfc7af67b178e419c91a80db90e7d39fc0435433b",
+    "E:\\research\\SAR\\tgrs_figrev_20261012\\figures_src\\asf_siteA_T37.geojson": "1eeca7f42662587d0fb8ff3e2e6061383f1bb8509f106c9432f30f3c10094feb",
+    "E:\\research\\SAR\\tgrs_figrev_20261012\\figures_src\\asf_siteA_T88.geojson": "0f39126d2cbcc6ccd631ec676fe77758e487ed759b67764c5c4a201d122f0437",
+    "E:\\research\\SAR\\tgrs_figrev_20261012\\figures_src\\asf_siteB_T139.geojson": "a4cc7207a93d7ff9bd1d385d4fea0213700f446795749880eabf0e0dd2be8494",
+    "E:\\research\\SAR\\tgrs_figrev_20261012\\figures_src\\asf_siteB_T15.geojson": "76f2ae0b0fbc9c3c6273f63dfc7af67b178e419c91a80db90e7d39fc0435433b",
+    "E:\\research\\SAR\\tgrs_figrev_20261012\\figures_src\\asf_siteB_T37.geojson": "7da51fb433a21fc6d0701d9435fde82fb5e3846f17b452dc2fcf0fb2588b163c",
+    "E:\\research\\SAR\\tgrs_figrev_20261012\\figures_src\\asf_siteB_T88.geojson": "0f39126d2cbcc6ccd631ec676fe77758e487ed759b67764c5c4a201d122f0437"
+  },
+  "scenes": {
+    "siteA_T15": "S1A_IW_SLC__1SDV_20240510T171724_20240510T171751_053812_068A1A_9006",
+    "siteA_T88": "S1A_IW_SLC__1SDV_20240515T172529_20240515T172556_053885_068C95_34DB",
+    "siteA_T37": "S1A_IW_SLC__1SDV_20240512T055038_20240512T055105_053834_068ADC_3D7B",
+    "siteA_T139": "S1A_IW_SLC__1SDV_20240507T054228_20240507T054255_053761_06884C_E633",
+    "siteB_T15": "S1A_IW_SLC__1SDV_20240510T171724_20240510T171751_053812_068A1A_9006",
+    "siteB_T88": "S1A_IW_SLC__1SDV_20240515T172529_20240515T172556_053885_068C95_34DB",
+    "siteB_T37": "S1A_IW_SLC__1SDV_20240512T055013_20240512T055040_053834_068ADC_BD9E",
+    "siteB_T139": "S1A_IW_SLC__1SDV_20240507T054203_20240507T054230_053761_06884C_529A"
+  },
+  "support_pixels": {
+    "site_A_four_track_valid": 633295,
+    "site_B_four_track_valid": 870085
+  },
+  "outputs_sha256": {
+    "E:\\research\\SAR\\tgrs_figrev_20261012\\manuscript\\figures\\fig_overview.pdf": "af12378eb8eb3f45e5a123b7f1d908de0961eea93b05984a08e0efa25503a083",
+    "E:\\research\\SAR\\tgrs_figrev_20261012\\manuscript\\figures\\fig_overview.png": "f95e0779f9c2f81fae512ce505186c7bd02216ad38fb6512ead3eb7d7ab3cf44"
+  }
+}

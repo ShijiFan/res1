@@ -1,10 +1,15 @@
-# When Does Repeat-Pass Coherence Add Information?
+# When Does Sentinel-1 Coherence Improve Land-Cover and Crop Mapping?
 
 Code, frozen protocols, result tables and predictions for the manuscript
 
-> S. Fan, D. Albuquerque, P. Pinho, and M. Shen, "When Does Repeat-Pass Coherence Add Information?
-> Sentinel-1 Land-Cover and Crop Mapping Across Acquisition Budgets, Class Definitions, and Spatial
-> Context," manuscript prepared for *IEEE Transactions on Geoscience and Remote Sensing*.
+> S. Fan, D. Albuquerque, P. Pinho, and M. Shen, "When Does Sentinel-1 Coherence Improve Land-Cover
+> and Crop Mapping?," manuscript prepared for *IEEE Transactions on Geoscience and Remote Sensing*.
+
+The 2026-10-12 revision added three analyses, released in `tgrs_rev_20261012/`: CNN runs with a 640 m
+training-centre exclusion buffer (`cnn640/`), a label-definition sensitivity check (`labelcheck/`), and
+the scripts and manifests that build every figure of the current manuscript (`figures_src/`). Their
+protocols (`PROTOCOL_*_20261012.md`) were written before the corresponding runs. The older
+`figures/make_figures.py` is kept for the figures of the 2026-10-02 release.
 
 The paper measures the marginal value of Sentinel-1 12-day VV coherence over backscatter from the same
 acquisitions at two Dutch sites:

@@ -1,0 +1,22 @@
+{
+  "utc": "2026-10-12T13:04:59.972074+00:00",
+  "torch": "2.11.0.dev20260203+cu128",
+  "device": "NVIDIA GeForce RTX 5080",
+  "series": "B640",
+  "buffer": 640.0,
+  "patches": [
+    1,
+    3,
+    5,
+    9,
+    11
+  ],
+  "reuse_idx": false,
+  "sha256": {
+    "E:\\research\\SAR\\tgrs_figrev_20261012\\cnn640\\run_cnn_buffers.py": "a3b22aadc0fa90d09e6c30197f211a14ec752c43b40f6f046f041cd2410eb994",
+    "E:\\research\\SAR\\merged_tgrs_20260930\\plan\\substantive_20261002\\run_small_cnn.py": "a289a1a73bb637041a9849a41f3169b9d98d6e23a23516d2ca98a806a2ec3468",
+    "E:\\research\\SAR\\A0_gamma0_rerun_20260929\\scripts\\s13_cnn_checks.py": "fd8f94a259cfb03d48f5572fb942a86268076c06849f16decf2dabd106c99a8d",
+    "E:\\research\\SAR\\A0_gamma0_rerun_20260929\\data\\cube_4track_v7.npz": "06d26adeb00471e6031aee4648b73af97913dd8aa38c4cec415b3869e2525af9",
+    "E:\\research\\SAR\\tgrs_figrev_20261012\\plan\\PROTOCOL_CNN640_20261012.md": "d02e32d71237bf87eee55c514c95b793d89aa09a41776d142daae79d1d5db243"
+  }
+}

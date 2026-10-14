@@ -1,0 +1,13 @@
+{
+  "patch": 9,
+  "arm": "CNN_IG",
+  "source": "t139",
+  "seed": 43,
+  "lr": 0.001,
+  "epochs": 30,
+  "wd": 0.0001,
+  "batch": 256,
+  "buffer_m": 640.0,
+  "n_train": 20000,
+  "seconds": 57.867026805877686
+}
